@@ -1,0 +1,38 @@
+<!--pages/financial/financial.wxml-->
+<view class='container'>
+  <view class='header' style='padding-bottom:{{search?"0rpx":"60rpx"}}'>
+    <view class='number'>
+      <view class='num'>当前余额：<span>{{money}}</span></view>
+      <text style='color:#4d84cb;float:right;' catchtap='switch'>时间搜索</text>
+    </view>
+    <view class='timeSearch' wx:if='{{search}}'>
+      <view class='time'>
+        <picker mode="date" value="{{date}}" bindchange="bindDateChangeStart">
+          <view class="picker">
+            {{startTime==''?"开始时间":startTime}}
+          </view>
+        </picker>
+        <text>至</text>
+        <picker mode="date" value="{{date}}" bindchange="bindDateChangeEnd">
+          <view class="picker">
+            {{endTime==''?"结束时间":endTime}}
+          </view>
+        </picker>
+      </view>
+      <button class='search' catchtap='search'>搜索</button>
+    </view>
+  </view>
+  <view class='center'>
+    <view class='list' wx:for="{{searchFlag?list:searchList}}">
+      <view class='company'>
+        <text class='name'>{{item.name}}</text>
+        <view class='money'>+ <span style='font-size:28rpx;'>￥</span> {{item.money}}</view>
+      </view>
+      <view class='state'>
+        <text class='time'>{{item.date}}</text>
+        <text class='pay'>{{item.state}}</text>
+      </view>
+    </view>
+  </view>
+  <button catchtap='withdrawal' class='withdrawal'>提现</button>
+</view>

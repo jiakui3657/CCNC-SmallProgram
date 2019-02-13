@@ -1,0 +1,7 @@
+<!--pages/balance/balance.wxml-->
+<view class='listitem' wx:for="{{list}}" wx:key="{{index}}">
+  <text style='color:#010101;font-size:34rpx;font-weight: 600;'>{{item.name}}</text>
+  <text class='money' wx:if='{{item.money<=0}}'>{{item.money}}</text>
+  <text class='money' wx:if='{{item.money>0}}'>+{{item.money}}</text>
+  <view style='margin-top:8rpx;'>{{item.date}}</view>
+</view>

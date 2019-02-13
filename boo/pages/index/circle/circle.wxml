@@ -1,0 +1,98 @@
+<view class="map_container" style=''>
+  <view class='header'> 
+    <view class='we'>
+      <image src="{{member.avatar}}"></image>
+      <view class='basis'>
+        <view>
+          <text class='name'>{{member.name}}</text>
+          <text class='position'> - {{member.job}}</text>
+        </view>
+        <text class="company">{{member.companyName}}</text>        
+        <!-- <view>
+          <image class="qositioning" src='../../images/circleQositioning.jpg'></image>
+          <text class="qositioningName">{{address}}</text> 
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <view class='release'>
+    <view class='rel'>
+      <text class='time'>今天</text>
+      <view class='m' bindtap='moodTo'>
+        <image src='../../images/circleMood.jpg'></image>
+        <text class='text'>发布心情</text>
+      </view>
+    </view>
+    <view class='rel'>
+       <view class='act' bindtap='activityTo'>
+        <image src='../../images/circleActivity.jpg'></image>
+        <text class='text'>发布活动</text>
+      </view>
+    </view> 
+  </view>
+  <view class='content'>  
+      <!-- <view class='about activity' wx:key="unique" wx:for="{{list}}" id="{{item.id}}" wx:key="{{item.id}}" wx:if="{{item.catalog==0}}">
+    <view class='on'>
+      <text class='date'>{{item.date}}</text>
+      <view class='area'>
+        <view class='title'>{{item.activity.note}}</view>
+        <view class='time'><text>活动时间：</text>{{item.activity.date}}</view>
+        <view class='place'><text>集合地点：</text>{{item.activity.address}}</view>
+        <view class='positioning' bindtap='map'>
+          <image src='../../images/location.jpg'></image>             
+          <text>{{item.address}}</text>
+        </view> 
+      </view> 
+    </view>
+    <view class='under clearfix'>
+      <view class='left'>
+        <navigator url='../../request/request' hover-class="none">
+          <image src='../../images/sign.jpg'></image>
+        </navigator>
+        <view class='number'>
+          <text class='start'>{{item.activity.joinNum}}</text>
+          <text class='end'>/{{item.activity.num==-1?'无上限':item.activity.num}}人</text>
+        </view>
+      </view>
+      <view class='right'>
+        <image class='commentsicon' src='../../images/commentsImg.jpg'></image>  
+        <text class='comments'>{{item.comments}}</text>
+        <image class='praiseicon' wx:if="{{item.liked}}" src='../../images/yespraiseImg.png'></image>
+        <image class='praiseicon' wx:else src='../../images/nopraiseImg.png'></image>
+        <text class='praisenumber'>{{item.likes}}</text>        
+      </view>
+    </view>
+  </view>
+   <view class='about mood' wx:key="unique" wx:for="{{list}}" id="{{item.id}}" wx:key="{{item.id}}" wx:if="{{item.catalog==1}}">
+      <view class='on'>
+      <text class='date'>3.30</text>
+      <view class='area'>
+        <view class='title'>{{item.note}}</view>
+        <view class='moodImg'>
+          <image  wx:key="property" wx:for="{{item.images}}" src='{{item.url}}'></image>
+        </view>
+        <view class='positioning'>
+             <image src='../../images/location.jpg'></image>             
+            <text>{{item.address}}</text>
+        </view> 
+      </view>
+    </view>
+    <view class='under clearfix'>
+      <view class='right'>
+        <image class="moneyImg" src='../../images/money.jpg' hidden='{{item.haveRedPacket==1 ? true : false}}'></image>
+        <text class='money'>抢红包</text>
+        <image class='commentsicon' src='../../images/commentsImg.jpg'></image>  
+        <text class='comments'>{{item.comments}}</text>
+        <image class='praiseicon' wx:if="{{item.liked}}" src='../../images/yespraiseImg.png'></image>
+        <image class='praiseicon' wx:else src='../../images/nopraiseImg.png'></image>
+        <text class='praisenumber'>{{item.likes}}</text>     
+      </view>
+    </view>
+  </view>   -->
+    <view  wx:key="unique" wx:for="{{list}}">
+      <activity id='activity' wx:if="{{item.catalog==0}}" item='{{item}}' toggin="1"></activity>
+      <mood id='mood' wx:else item='{{item}}' toggin="1"></mood> 
+    </view>  
+    
+</view>
+</view> 

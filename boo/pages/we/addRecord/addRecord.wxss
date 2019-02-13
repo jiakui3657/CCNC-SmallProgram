@@ -1,0 +1,44 @@
+/* pages/we/addRecord/addRecord.wxss */
+.map_container{
+  padding: 10rpx 20rpx;
+}
+.add{
+  margin: 30rpx auto;
+  width: 500rpx;
+  height: 100rpx;
+  line-height:100rpx;
+  text-align: center;
+  background: #b21e23;
+  color: #fff;
+}
+.num{
+  text-align: center
+}
+.list{
+  line-height:50rpx;
+  border-bottom: 1rpx solid #E2E2E2;
+  padding: 28rpx 0;
+}
+.list view{
+  overflow: hidden;
+}
+.list view .name {
+  float: left;
+  font-size: 32rpx;
+  font-weight: 600
+}
+.list view .westate {
+  float: right;
+  font-size: 28rpx;
+  color: #999;
+}
+.list view .position {
+  float: left;
+  font-size: 28rpx;
+  color: #333;
+}
+.list view .time {
+  float: right;
+  font-size: 24rpx;
+  color: #999;
+}

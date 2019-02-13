@@ -1,0 +1,139 @@
+/* pages/withdrawal/withdrawal.wxss */
+page{
+  height: 100%;
+}
+.container{
+  background-color: #f4f4f4;
+  overflow: auto;
+}
+.balance{
+  background-color: #fff;
+  height: 160rpx;
+  padding: 0 56rpx;
+  line-height: 155rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.balance text{
+  font-size: 38rpx;
+  color: #666;
+}
+.information{
+  margin-top: 25rpx;
+  background-color: #fff;
+  padding: 0 46rpx;
+  font-size: 28rpx;
+}
+.information .money{
+  overflow: hidden;
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  height: 154rpx;
+  line-height: 154rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.information .money input{
+  color: #999;
+  width: 250rpx;
+  height:154rpx;
+  display: inline-block;
+  vertical-align:middle;
+  font-size: 40rpx;
+}
+.information .number{
+  color: #333;
+  padding: 15rpx 0;
+  padding-left:10rpx;
+  
+}
+.information .name{
+  color: #333;
+  padding: 30rpx 0rpx 15rpx 10rpx;
+}
+.information .where{
+  color: #333;
+  padding: 15rpx 0rpx 30rpx 10rpx;
+}
+.information .number text{
+  color: #666;
+  margin-right: 46rpx;
+  display: inline-block;
+  width: 85rpx;
+}
+.information .name text{
+  color: #666;
+  margin-right: 46rpx;
+  display: inline-block;
+  width: 85rpx;
+}
+.information .where text{
+  color: #666;
+  margin-right: 46rpx;
+  display: inline-block;
+  width: 85rpx;
+}
+.amount{
+  float: left;
+}
+.minMoney{
+  float: right;
+}
+.running{
+  margin-top: 25rpx;
+  background-color: #fff;
+  padding: 0 46rpx;
+  padding-bottom: 98rpx;
+}
+.running .title{
+  height: 104rpx;
+  line-height: 104rpx;
+  font-size: 30rpx;
+  color: #999;
+  text-align: center;
+}
+.running .list{
+  padding: 40rpx 10rpx 30rpx 15rpx;
+  border-top: 1rpx solid #ddd;
+}
+.running .list .deductions{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.running .list .deductions .money{
+  font-size: 40rpx;
+  color: #4d84cb;
+}
+.running .list .deductions .money text{
+  font-size: 28rpx;
+}
+.running .list .time{
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 30rpx;
+}
+.running .list .time .state{
+  color: #666;
+}
+.active{
+    color: #999;
+    font-size: 40rpx;
+}
+button{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 98rpx;
+  line-height: 95rpx;
+  background:linear-gradient(to right, #b30d66, #98119a);
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 0;
+}
+button::after{
+  border-radius: 0;
+}

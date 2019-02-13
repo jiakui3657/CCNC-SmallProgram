@@ -1,0 +1,111 @@
+/* pages/activity/activity.wxss */
+page{
+  height:100%;
+}
+.container{
+  background-color: #f4f4f4;  
+  padding-bottom: 98rpx;
+}
+.header{
+  padding: 0 35rpx;
+  font-size: 28rpx;
+  background-color: #fff;
+  overflow:hidden;
+}
+.header .number{
+  height: 134rpx;
+  line-height: 130rpx;
+  text-align: center;
+}
+.header .number span{
+  color: #ae0e70;
+  font-size: 38rpx;
+}
+.header .search{
+  height: 64rpx;
+  background-color: #f2f2f2;
+  border-radius: 32rpx;
+  color: #999999;
+  margin-bottom: 22rpx;
+  padding-left: 20rpx;
+}
+.active{
+  text-align: center;
+  font-size: 28rpx;
+}
+.list{
+  font-size: 28rpx;
+  background-color: #fff;
+  padding: 0 46rpx;
+  overflow:hidden;
+  margin-top: 25rpx;
+}
+.list .number{
+  height: 86rpx;
+  line-height: 80rpx;
+  color: #999;
+  border-top: 1rpx solid #ddd;
+  padding-left: 15rpx;
+  overflow: hidden;
+}
+.list .number view{
+  float: left;
+}
+.list .number .total{
+  margin-left: 128rpx;
+}
+.list .number view span{
+  color: #ae0e70;
+}
+.list view{
+  overflow: hidden;  
+}
+.list .phone{
+  padding-left: 15rpx;  
+  height: 85rpx;
+  line-height: 80rpx;
+  color: #666666;
+}
+.list view view{
+  float: left;
+}
+.list view .vip{
+  margin-left: 34rpx;
+}
+.list view .name{
+  margin-right: 32rpx;
+  font-size: 34rpx;
+}
+.list .company{
+  margin: 35rpx 0;
+  padding-left: 15rpx;
+  color: #333;
+}
+.list .time{
+  margin-bottom: 10rpx;
+  padding-left: 15rpx;
+  color: #999;
+}
+.list .time span{
+  display: inline-block;
+  width: 32rpx;
+  height: 4rpx;
+  background-color: #999;
+  margin: 0 16rpx;
+  vertical-align: middle;
+}
+button{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 98rpx;
+  line-height: 95rpx;
+  background:linear-gradient(to right, #b30d66, #98119a);
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 0;
+}
+button::after{
+  border-radius: 0;
+}

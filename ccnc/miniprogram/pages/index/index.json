@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "myMap": "plugin://myPlugin/map"
+  }
+}

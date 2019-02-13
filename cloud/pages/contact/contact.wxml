@@ -1,0 +1,38 @@
+<!--pages/phone/phone.wxml-->
+<view class='container'>
+  <view class='search'>
+    <input cursor='20rpx' bindfocus="obtain" bindblur="lose" bindinput='search' value='{{val}}' ></input>
+    <view class='text' style='left: {{flag?"38%":"0%"}};'>
+      <image src='../image/search.png'></image> 
+       <text wx:if='{{active}}'>搜索</text>
+    </view>
+  </view>
+  <view class='information' wx:if="{{list.length>0}}">
+    <scroll-view scroll-y style='height:100%' lower-threshold='50' bindscroll='scroll'>
+      <view class='list' catchtap='contactDetails' id="{{index}}" wx:for="{{list}}">
+        <view class='company'>{{item.companyName}}</view>
+        <view class='name'>{{item.name}}</view>
+        <view class='status'>{{item.job}}</view>
+        <image src='../image/code.png' class='code' data-phont="{{item.phone}}"></image>
+        <image src='../image/phone.png' class='phone' catchtap='phone' data-phone="{{item.phone}}"></image>
+      </view>
+       <view style='height:90rpx;background-color:#f2f2f2;'></view> 
+    </scroll-view>
+    <view class='shadow' wx:if="{{list.length>=3}}"></view>
+    <image class='flicking' src='../image/flicking.png' catchtap='flicking'></image>
+  </view>
+  <view class='information' style="box-shadow: -2rpx 0 10rpx #eee,0 -2rpx 10px #eee,0 2rpx 10rpx #eee,2rpx 0 10rpx #eee;background-color: #fff;" wx:else>
+    <image src='../image/empty.png' class='empty'></image>
+    <text>还没有保存的名片</text>
+    <image class='flicking' src='../image/flicking.png' catchtap='flicking'></image>
+  </view> 
+  
+  <view class='tab'>
+    <view class='list' catchtap='home'>
+      我的名片
+    </view>
+    <view class='list' style='color:#5996e1;font-size:40rpx;'>
+      名片夹
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<view class="orderView" hidden="{{list==''?true:false}}">
+  <view class='item' wx:for="{{list}}" wx:key="{{index}}">
+    <view class='row'>
+      <text>订单号:</text>
+      <view>{{item.orderNum}}</view>
+    </view>
+    <view class='row'>
+      <text>收货人:</text>
+      <view>{{item.username}}</view>
+    </view>
+    <view class='row'>
+      <text>手机号:</text>
+      <view>{{item.phone}}</view>
+    </view>
+    <view class='row'>
+      <text>收货地址:</text>
+      <view>{{item.address}}</view>
+    </view>
+
+    <view class='row'>
+      <text>下单时间:</text>
+      <view>{{item.buyTime}}</view>
+    </view>
+    <view class='row'>
+      <text>订单内容:</text>
+      <view class='listView'>
+        <block wx:for="{{item.goodsList}}" wx:for-item="itt" wx:key="{{index}}">
+          <view class='list-item'>
+            <view>{{itt.name}}\t\t\t\t\t\t\t\t\t ×  \t\t\t\t\t\t\t\t\t{{itt.num}}</view>
+            <view class='danjiaV'>单价\t\t\t￥{{itt.price}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='row'>
+      <text>配送费:</text>
+      <view>￥{{item.peisongfei}}</view>
+    </view>
+    <view class='row '>
+      <text>总价:</text>
+      <view>￥{{item.allPrice}}</view>
+    </view>
+  </view>
+</view>
+<view class='noorder' hidden="{{list!=''?true:false}}"> 暂无订单</view>

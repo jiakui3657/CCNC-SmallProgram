@@ -1,0 +1,62 @@
+<!--pages/index/results/results.wxml-->
+<view class="main">
+  <view class='content'>
+    <view class='left'>
+      <block wx:for="{{tree}}">
+        <view class='{{tree_n}}' bindtap='tree_n' style='{{key==index?"background:#f1f1f1;color:#212121;font-weight:800;":""}}' id='{{index}}'>{{item.name}}</view>
+      </block>
+    </view>
+    <view class='right'>
+      <block wx:for="{{treec}}">
+        <view class='tree_c clear'>
+            <view class='t_top clear'>
+              <view class='t_left'>
+                  <view class='img'>
+                    <image src='{{item.img}}'/>
+                  </view>
+                  <view class='tc'>
+                      <view>苗木数量:{{item.tnum}}</view>
+                      <view class='price clear'>
+                        <view class='dj'>苗木单价</view>
+                        <view class='dw'>{{item.tprice}}元/株</view>
+                      </view>
+                      <view class='nnum clear'>
+                        <view class='nnn'>数量</view>
+                        <view class='jian' bindtap='jia' id='{{index}}'>
+                            <image src="../../images/jian.png"/>
+                        </view>
+                        <view class='tinput'>
+                          <input type='number' class='tipt' value='{{item.tnum2}}' bindinput='jiage'/>
+                        </view> 
+                        <view class='jia' bindtap='jia' id='{{index}}'>
+                            <image src="../../images/jia.png"/>
+                        </view>
+                      </view>
+                  </view>
+              </view>
+              <view class='t_right'>签约</view>
+            </view>
+            <view class='t_bottom clear'>
+                <view>发布单位:{{item.tads}}</view>
+                <view>截止时间:{{item.ttime1}}</view>
+                <view>投标时间:{{item.ttime2}}</view>
+            </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+  <view catchtap='industry'>
+    <image src='../../images/20180518151844.png'></image>
+    <text>竞标</text>
+  </view>
+  <view catchtap='results'>
+    <image src='../../images/20180518151909.png'></image>
+    <text>竞标结果</text>
+  </view>
+  <view catchtap='contract'>
+    <image src='../../images/20180518151921.png'></image>
+    <text>已签合同</text>
+  </view>
+</view>

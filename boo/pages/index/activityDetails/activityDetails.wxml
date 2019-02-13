@@ -1,0 +1,69 @@
+<!--pages/index/activityDetails/activityDetails.wxml-->
+<view class='container'>
+  <view class='about activity' id="{{list.id}}">
+    <view class='on'>
+      <image class='portrait' src='{{list.member.avatar}}'></image>
+      <view class='area'>
+        <view class='information'>
+          <text class='name'>{{list.member.name}}</text> - 
+          <text class='position'> {{list.member.job}}</text>
+          <text class='position' style='display:inline-block;padding:0rpx 10rpx;padding-bottom:3rpx;background-color:#b21e23;color:#fff;margin-left:10rpx;font-size:24rpx;border-radius:20rpx;' wx:if="{{list.member.catalog!='会员'}}">{{list.member.catalog}}</text>
+        </view>
+        <view class='companys'>{{list.member.companyName}}</view>
+        <text class='title' decode='true' space='true'>{{list.activity.note}}</text>
+        <view class='time'><text>活动时间：</text>{{list.activity.date}}</view>
+        <view class='place' catchtap='open' data-longitude="{{list.activity.lng}}" data-latitude="{{list.activity.lat}}"><text>集合地点：</text>{{list.activity.address}}</view>
+        <view class='place'><text>费用：</text>{{list.activity.money}}</view>
+        <view class='moodImg'>
+          <image wx:key="unique" mode="aspectFill" wx:for="{{list.images}}" wx:for-item="it" data-list="{{list.images}}"  src='{{it.url}}' data-src="{{it.url}}" catchtap='preview'></image>
+        </view>
+      </view> 
+    </view>
+  </view> 
+  <view class='tab'>
+    <text style='float:left;' class='{{flag==0?"active":""}}' catchtap='tab1'>报名{{signUp.total}}</text>
+    <text style='margin:0 auto;' class='{{flag==1?"active":""}}' catchtap='tab2'>评论{{comments.total}}</text>
+    <text style='float:right;' class='{{flag==2?"active":""}}' catchtap='tab3'>点赞{{praise.total}}</text></view>
+   <scroll-view scroll-y scroll-top class='content {{flag==0?"show":"hide"}}'>
+    <view class='list' wx:key="unique" wx:for="{{signUp.list}}">
+      <image src='{{item.member.avatar}}'></image>
+      <view class='text'>
+        <view class='contentName'>{{item.member.name}}</view>
+        <view>{{item.date}}报名参加</view>
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view scroll-y scroll-top class='content {{flag==1?"show":"hide"}}' style='padding-bottom:116rpx;'>
+    <view class='list' wx:key="unique" wx:for="{{comments.list}}">
+      <image src='{{item.member.avatar}}' catchtap='details' data-name='{{item.member.name}}' data-iid="{{item.member.id}}"></image>
+      <view class='text'>
+        <view class='contentName'>{{item.member.name}}</view>
+        <view style='word-wrap:break-word'>{{item.note}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view scroll-y scroll-top class='content {{flag==2?"show":"hide"}}'>
+    <view class='list' wx:key="unique" wx:for="{{praise.list}}">
+      <image src='{{item.member.avatar}}' catchtap='details' data-name='{{item.member.name}}' data-iid="{{item.member.id}}"></image>
+      <view class='text'>
+        <view class='contentName'>{{item.member.name}}</view>
+        <view>{{item.date}}赞了你</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view  class='navigation'>
+    <view class='{{state?"Active":"navigationActive"}}' catchtap='signUp'>{{state?"已报名":"报名"}}</view>
+    <view catchtap='comment'>
+      <image src='../../images/commentsImg.png'></image>
+      评论
+    </view>
+    <view catchtap='addPraise' data-isActive="{{liked}}">
+      <image src='{{liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}' style='animation:{{click&&liked?"myfirst .3s":""}}'></image>
+      {{liked?"已点赞":"点赞"}}
+    </view>
+  </view>
+  <view class='comments' catchtap='return false' wx:if="{{switch}}">
+    <textarea show-confirm-bar='' auto-focus="true" focus="true" placeholder='写评论...' placeholder-style='color:#ccc;font-size:30rpx'  bindinput='text' maxlength='-1' auto-height="true" adjust-position ="true" cursor-spacing ='15' bindblur="cancel"/> 
+    <button catchtap='send' disabled='{{disabled}}'>发送</button>
+  </view>
+</view>

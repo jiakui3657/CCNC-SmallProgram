@@ -1,0 +1,13 @@
+<!--pages/trip/trip.wxml-->
+<view class='container'>
+  <view class='list' wx:for="{{list}}" wx:key="unique">
+    <view class='name'>
+      <text class='title'>{{item.name}}</text>
+      <text class='state'>{{item.state}}</text>
+    </view>
+    <view class='time'>
+      <text>{{item.no}}</text>
+      <text>{{item.date}}</text>
+    </view>
+  </view>
+</view>

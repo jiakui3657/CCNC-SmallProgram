@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+    <view class='title'>
+      <image src='../image/remind.png'></image>
+      <text>{{name}}</text>
+    </view>
+    <view class='number'>
+      <view class='entrance'>今日入场：<span>{{checkins}}</span>人次</view>
+      <view class='securities'>今日消费：<span>{{nums}}</span>张</view>
+    </view>
+  </view>
+  <view class='fun'>
+    <view wx:for='{{list}}' catchtap='{{item.jump}}'>
+      <image src='{{item.icon}}'></image>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+  <open-data type="groupName" open-gid="xxxxxx"></open-data>
+</view>
+<view class='code' wx:if='{{codeToggle}}' catchtap='code'>
+  <view class='board' catchtap='return false'>
+    <image class='avatar' src='{{logo}}'></image>
+    <view class='name'>{{name}}</view>
+    <view class='codePhoto'>
+      <image src='{{code}}'></image>    
+      <image class='merchants' src='../image/avatar.png'></image>        
+    </view>
+    <view class='instructions'>扫描上面的二维码图案</view>    
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/employees/employees.wxml-->
+<view class='container'>
+  <view class='card'>
+    <image class='bj' src='../../img/vb1.png'></image>
+    <view class='money'>￥<text>{{date.money}}</text></view>
+    <!-- <view class='original'></view> -->
+  </view>
+  <view class='giving'>员工申请<text></text>，赠送会员卡一张</view>    
+  <view class='card1'>
+    <image class='bj' src='../../img/vb.png'></image>
+    <image class='code' src='../../img/code.jpg'></image>
+    <image class='avatar' src='../../img/avatar.png'></image>
+    <view class='name'>xx</view>
+    <view class='money'>￥<text>{{date.vip}}</text>/年</view>
+    <!-- <view class='original'></view> -->
+  </view>
+  <view class='giving'>员工申请<text></text>，请填写相关信息</view>      
+  <input type='text' bindinput='val' value='{{date.name}}' placeholder='请输入姓名' placeholder-style='color: #999;font-size:32rpx;' bindinput='name'></input>
+  <input type='digit' bindinput='val' value='{{date.phone}}' placeholder='请输入手机号' placeholder-style='color: #999;font-size:32rpx;' bindinput='phone'></input>
+  <input type='text' bindinput='val' value='{{date.no}}' placeholder='请输入身份证号码' placeholder-style='color: #999;font-size:32rpx;' bindinput='no'></input>
+  <!-- <view class='securities' wx:for='{{list[0].activitys}}' catchtap='choose' id='{{item.id}}'>
+    <image src='../../img/securities.png'></image>
+    <view class='name'>{{item.name}}</view>
+    <view class='presented'>{{item.note}}</view>
+    <view class='address'><image src='../../img/vipAddress.png'></image> {{item.address}}</view>
+    <image class='choose' src='{{id==item.id?"../../img/selected.png":"../../img/uncheck.png"}}'></image>
+    <view class='money'><text>￥</text>{{item.money}}</view>
+    <button class='phone'></button>
+  </view> -->
+  <!-- <view class='introduce'>
+    <view class='title'>卡劵介绍</view>
+    <text>{{card.demo}}</text>
+  </view> -->
+</view>
+<button class='pay' catchtap='card'>充值并申请</button>

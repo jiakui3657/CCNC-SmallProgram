@@ -1,0 +1,16 @@
+<!--pages/information/information.wxml-->
+<view class='container'>
+  <view class='information'>
+    <view class='personal'>
+      <view class='company'>{{list.companyName}}</view>
+      <view class='name'>{{list.name}}</view>
+      <view class='status'>{{list.job}}</view>
+      <view class='phone'>{{list.phone}}</view>
+    </view>
+    <view class='note'>
+      备注：
+      <input></input>
+    </view>
+  </view>
+  <button catchtap='submit'>保存到名片夹</button>
+</view>

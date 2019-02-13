@@ -1,0 +1,79 @@
+<!--pages/components/mood/mood.wxml-->
+<view class='moodOne about mood' id="{{item.id}}" data-moneyId='{{item.packetId}}' catchtap='moodDetails' wx:if="{{toggin==0}}">
+  <view class='on'>
+    <image class='portrait' src='{{item.member.avatar}}' catchtap='details' data-name="{{item.member.name}}" id="{{item.member.id}}"></image>
+    <view class='area'>
+      <view class='information'>
+        <text class='name'>{{item.member.name}}</text>
+        <text class='position' wx:if="{{item.member.job!=''}}">  -  {{item.member.job}}</text>
+        <text class='position' style='display:inline-block;padding:0rpx 10rpx;padding-bottom:3rpx;background-color:#b21e23;color:#fff;margin-left:10rpx;font-size:24rpx;border-radius:20rpx;' wx:if="{{item.member.catalog!='会员'}}">{{item.member.catalog}}</text>
+        <view class='company' catchtap='share'>
+          <!-- <button class='share' id="{{item.id}}" data-active="{{item.catalog}}" data-src="{{item.images[0].url}}" open-type="share" type="primary" hover-class="other-button-hover">
+            <image src='../../images/share.png'></image>
+            </button> -->
+        </view>
+      </view>
+      <view class='companys'>{{item.member.companyName}}　{{item.date}}</view>
+      <text decode='true' space='true' class='title' hidden='{{item.note==""?true:false}}'>{{item.note}}</text>
+      <view class='moodImg' hidden='{{item.images.length==0?true:false}}'>
+        <image wx:key="unique" mode="aspectFill" wx:for="{{item.images}}" wx:for-item="it" data-list="{{item.images}}" src='{{it.url}}' data-src="{{it.url}}" catchtap='preview' class='{{item.images.length==1?"active":""}}'></image>
+      </view>
+      <view class='positioning' hidden='{{item.address==""?true:false}}' catchtap='open' data-longitude="{{item.lng}}" data-latitude="{{item.lat}}" data-name="{{item.address}}">
+        <image src='../../images/location.png'></image>
+        <text>{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='under clearfix' style='padding-left:{{item.haveRedPacket==0?"0rpx":"100rpx"}}'>
+    <view class='left' hidden='{{item.haveRedPacket==0 ? true : false}}' style='width:{{item.haveRedPacket==0?"":"33.3%"}};text-align:left;' catchtap='openMoney' data-index="0" data-moneyId='{{item.packetId}}' id='{{item.id}}'>
+      <image class="moneyImg" src='../../images/min-money.png' hidden='{{item.haveRedPacket==0 ? true : false}}'></image>
+      <text class='money' hidden='{{item.haveRedPacket==0 ? true : false}}'>抢红包</text>
+    </view>
+    <view class='content' style='width:{{item.haveRedPacket==0?"50%":"33.3%"}};' catchtap='comments' data-index="1" id="{{item.id}}" data-moneyId='{{item.packetId}}'>
+      <image class='commentsicon' src='../../images/commentsImg.png'></image>
+      <text class='comments'>{{item.comments}}</text>
+    </view>
+    <view class='right {{togg?"active":""}}' catchtap='praise' data-index="2" id='{{item.id}}' data-flag="{{item.liked}}" data-moneyId='{{item.packetId}}' style='width:{{item.haveRedPacket==0?"50%":"33.3%"}}'>
+      <image class='praiseicon' wx:if="{{flag}}" src='{{item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+      <image class='praiseicon' wx:else src='{{!item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+      <text class='praisenumber' wx:if="{{flag}}">{{item.likes}}</text>
+      <text class='praisenumber' wx:else>{{item.liked?item.likes-1:item.likes+1}}</text>
+    </view>
+  </view>
+</view>
+<view class='moodTwo about mood' id="{{item.id}}" data-moneyId='{{item.packetId}}' catchtap='moodDetails' wx:if="{{toggin==1}}">
+  <view class='on'>
+    <text class='date'>{{item.date}}</text>
+    <view class='area'>
+      <view class='company' catchtap='share'>
+        <button class='share' id="{{item.id}}" data-active="{{item.catalog}}" data-src="{{item.images[0].url}}" open-type="share" type="primary" hover-class="other-button-hover">
+          <image src='../../images/share.png'></image>
+        </button>
+      </view>
+      <text class='title' decode='true' space='true'>{{item.note}}</text>
+      <view class='moodImg' hidden='{{item.images.length==0?true:false}}'>
+        <image wx:key="unique" mode="aspectFill" wx:for="{{item.images}}" wx:for-item="it" data-list="{{item.images}}" src='{{it.url}}' data-src="{{it.url}}" catchtap='preview' class='{{item.images.length==1?"active":""}}'></image>
+      </view>
+      <view class='positioning' hidden='{{item.address==""?true:false}}'>
+        <image src='../../images/location.png'></image>
+        <text>{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='under clearfix' style='padding-left:120rpx'>
+    <view class='left' style='width:33.3%' hidden='{{item.haveRedPacket==0 ? true : false}}'>
+      <image class="moneyImg" src='../../images/min-money.png' hidden='{{item.haveRedPacket==0 ? true : false}}'></image>
+      <text class='money' hidden='{{item.haveRedPacket==0 ? true : false}}'>抢红包</text>
+    </view>
+    <view class='content' style='width:{{item.haveRedPacket==0?"50%":"33.3%"}};' catchtap='comments' data-index="1" id="{{item.id}}" data-moneyId='{{item.packetId}}'>
+      <image class='commentsicon' src='../../images/commentsImg.png'></image>
+      <text class='comments'>{{item.comments}}</text>
+    </view>
+    <view class='right {{togg?"active":""}}' catchtap='praise' id='{{item.id}}' data-flag="{{item.liked}}" data-moneyId='{{item.packetId}}' style='width:{{item.haveRedPacket==0?"50%":"33.3%"}}'>
+      <image class='praiseicon' wx:if="{{flag}}" src='{{item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+      <image class='praiseicon' wx:else src='{{!item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+      <text class='praisenumber' wx:if="{{flag}}">{{item.likes}}</text>
+      <text class='praisenumber' wx:else>{{item.liked?item.likes-1:item.likes+1}}</text>
+    </view>
+  </view>
+</view>

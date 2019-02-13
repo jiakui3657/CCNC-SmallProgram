@@ -1,0 +1,20 @@
+<!--pages/index/pay/pay.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image src='{{list.avatar}}'></image>
+    <view><text>{{list.name}} - </text>{{list.job}}</view>
+  </view>
+<view class='number'>支付￥{{list.money}}</view>
+<view class='pay'>
+  <view class='title' wx:if="{{state!=0}}">支付方式</view>
+  <view class='way {{flag==index?"special":""}}' wx:for="{{pay}}" bindtap='select' id='{{index}}' wx:if="{{state!=0}}">
+    <image src='{{item.src}}'></image>
+    <text class='change'>{{item.name}}</text>
+    <text class='amount'><text wx:if="{{item.money!=''}}">￥</text>{{item.money}}</text>
+    <view class='state'>
+      <image src='{{flag==index?"../../images/selected.png":"../../images/uncheck.png"}}' style='width:100%;height:100%'></image>
+    </view>
+  </view>
+</view>
+<button class='release' catchtap='submit' disabled='{{disabled}}'>确定</button>
+</view>

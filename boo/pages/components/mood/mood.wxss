@@ -1,0 +1,448 @@
+/* pages/components/mood/mood.wxss */
+.moodOne {
+  margin-top: 18rpx;
+  background-color: #fff;
+  padding: 29rpx 20rpx 0rpx 19rpx;
+}
+.moodOne .on {
+  border-bottom:1rpx solid #e6e6e6;
+  overflow: hidden;
+  padding-bottom:20rpx;
+}
+.moodOne .on .area {
+  font-size: 30rpx;
+  overflow: hidden;
+  padding-left: 19rpx;
+  font-weight: 600;
+  padding-top:5rpx;
+}
+.moodOne .portrait {
+  float: left;
+  width: 81rpx;
+  height: 81rpx;
+  border-radius: 40rpx;
+}
+.moodOne .information {
+  overflow: hidden;
+}
+.moodOne .information .name {
+  font-weight: 600;
+  font-size: 32rpx;
+  vertical-align: middle;
+  color: #333;
+}
+.moodOne .information .position {
+  font-weight: 400;
+  font-size: 28rpx;
+  vertical-align: middle;
+  color: #666;
+}
+.moodOne .information .company {
+  float: right;
+  margin-right: 20rpx;
+  /* height: 60rpx; */
+  width: 60rpx;
+}
+.moodOne .information .company button {
+  width: 36rpx;
+  height: 36rpx;
+  background-color: #fff;
+  border: none;
+  padding:0;
+  border-radius:0;
+}
+.moodOne .information .company button::after {
+  border: 0;
+}
+.moodOne .information .company image {
+  float: right;
+  width: 36rpx;
+  height: 36rpx;
+}
+.moodOne .companys {
+  font-size: 24rpx;
+  color: #999;
+  font-weight: 400;
+}
+.moodOne .title{
+  margin-top: 16rpx;
+  font-weight: 400;
+  text-indent:2rem;
+}
+.moodOne .time{
+  margin-top: 25rpx;
+}
+.moodOne .place {
+  margin-top: 25rpx;
+}
+.moodOne .positioning {
+  margin: 5rpx 0 0rpx 0;
+}
+.moodOne .positioning image {
+  width: 28rpx;
+  height: 28rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.moodOne .positioning text {
+  color: #999;
+  vertical-align: middle;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+}
+.moodOne .under {
+  height: 59rpx; 
+  font-size: 18rpx;  
+  text-align: center;
+  line-height: 59rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content:space-between;
+  padding: 10rpx 0;
+}
+.moodOne .under .left {
+  float: left;
+}
+.moodOne .under .left .navigator {
+  float: left;
+}
+.moodOne .under .left .navigator image {
+  width: 95rpx;
+  height: 45rpx;
+}
+.moodOne .under .left .number {
+  float: left;
+  height: 46rpx;
+  line-height: 46rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+.moodOne .under .left .number .start,.end {
+  font-size: 24rpx;
+  color: #333;
+}
+.moodOne .under .left .number .start {
+  color: #999;
+}
+.moodOne .under .left .number .arrow {
+  margin-left: 20rpx;
+  width: 30rpx;
+  height:31rpx;
+  display: inline-block;
+  transform:rotate(-90deg);
+  transition:All 0.2s ease;
+  -webkit-transition:All 0.2s ease;
+}
+.moodOne .under .right {
+  position: relative; 
+}
+.moodOne .under .right .arrow {
+  display: inline-block;
+  color: #000;
+  margin-left: 27rpx;
+  transform:rotate(-90deg);
+  transition: All 0.2s ease;   
+  -webkit-transition: All 0.2s ease;  
+}
+.moodOne .under .right .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;
+}
+.moodOne .under .left .number .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;  
+}
+.moodOne .under .right .money {
+ vertical-align:midden;
+  color: #f44040;
+  margin-left: 13rpx;
+}
+.moodOne .under .right .commentsicon {
+  color: #000;
+  vertical-align:midden;
+}
+.moodOne .under .moneyImg {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top:8rpx;
+}
+.moodOne .under .money {
+  font-size: 26rpx;
+  color: #F44040;
+  margin-left: 13rpx;
+}
+.moodOne .comments {
+  margin-left: 16rpx;
+  vertical-align: middle;
+  font-size: 26rpx;
+}
+.moodOne .commentsicon {
+  width: 39rpx;
+  height: 33rpx;
+  vertical-align: middle;
+}
+.moodOne .praisenumber {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 16rpx;
+  position: absolute;
+}
+.moodOne .praiseicon {
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align:text-bottom;
+}
+.moodOne .active .praiseicon {
+  animation:myfirst .3s;  
+}
+@keyframes myfirst
+{
+0%   {transform: rotate(1)}
+50%  {transform: rotate(1.5)}
+100% {transform: rotate(1)}
+}
+.moodOne .moodImg {
+  margin-top: 10rpx
+}
+.moodOne .moodImg image {
+  width: 170rpx;
+  height: 170rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.moodOne .moodImg .active {
+  width: 480rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.moodOne .praiseiconActive {
+  font-size: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+
+.moodTwo {
+  background-color: #fff;
+  padding: 42rpx 20rpx 0rpx 20rpx;
+  margin-top: 18rpx;
+}
+.moodTwo .on {
+  overflow: hidden;
+}
+.moodTwo .on .area {
+  font-size: 30rpx;
+  overflow: hidden;
+  margin-left: 100rpx;
+  font-weight: 400;
+  border-bottom:1rpx solid #e6e6e6;
+  position: relative;
+  min-height: 50rpx;
+  padding-left: 15rpx;
+  padding-bottom: 20rpx;
+}
+.moodTwo .on .area .title {
+  width:88%;
+  display:inline-block;
+}
+.moodTwo .date{
+  float:left;
+  margin-left:5rpx;
+  font-size:28rpx;
+  color:#999;
+  font-weight:400;
+}
+.moodTwo .portrait {
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+.moodTwo .companys {
+  font-size: 24rpx;
+  color: #8d8d8d;
+  font-weight: 400;
+  margin-top:5rpx;
+}
+.moodTwo .time{
+  margin-top: 16rpx;
+}
+.moodTwo .place {
+  margin-top: 16rpx;
+}
+.moodTwo .positioning {
+  margin-top: 20rpx;
+}
+.moodTwo .positioning image {
+  width: 28rpx;
+  height: 28rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.moodTwo .positioning text {
+  color: #999;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+.moodTwo .under {
+  height:59rpx;
+  text-align:center;
+  font-size:18rpx;
+  line-height:59rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+.moodTwo .under .left {
+  float: left;
+}
+.moodTwo .under .left navigator {
+  float: left;
+}
+.moodTwo .under .left navigator image {
+  width: 95rpx;
+  height: 45rpx;
+}
+.moodTwo .under .left .number {
+  float: left;
+  height: 46rpx;
+  line-height: 46rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+.moodTwo .under .left .number .start,.end {
+  font-size: 24rpx;
+  color: #333;
+}
+.moodTwo .under .left .number .start {
+  color: #999;
+}
+.moodTwo .under .left .number .arrow {
+  margin-left: 20rpx;
+  width: 30rpx;
+  height:31rpx;
+  display: inline-block;
+  transform:rotate(-90deg);
+  transition:All 0.2s ease;
+  -webkit-transition:All 0.2s ease;
+}
+.moodTwo .under .right {
+  height: 57rpx;
+  line-height: 57rpx;
+  font-size: 26rpx;
+  position: relative;
+  text-align: center;
+}
+.moodTwo .under .right .arrow {
+  display: inline-block;
+  color: #000;
+  margin-left: 27rpx;
+  transform:rotate(-90deg);
+  transition: All 0.2s ease;   
+  -webkit-transition: All 0.2s ease;  
+}
+.moodTwo .under .right .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;
+}
+.moodTwo .under .left .number .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;  
+}
+.moodTwo .under .moneyImg {
+ width: 40rpx;
+ height: 40rpx;
+ float: left;
+ margin-top: 5rpx;
+}
+.moodTwo .under .money {
+ margin-left: 14rpx;
+ color: #f44040;
+ font-size: 28rpx;
+ float: left; 
+}
+.moodTwo .under .right .commentsicon {
+  color: #000;
+  vertical-align:midden;
+}
+.moodTwo .comments {
+  margin-left: 16rpx;
+  vertical-align: middle;
+  color: #999;
+  font-size: 26rpx;
+}
+.moodTwo .commentsicon {
+  /* margin-left: 220rpx; */
+  width: 39rpx;
+  height: 33rpx;
+  vertical-align: middle;
+}
+.moodTwo .praisenumber {
+  vertical-align: middle;
+  color: #999;
+  margin-left: 16rpx;
+}
+.moodTwo .praiseicon {
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align:text-bottom;
+}
+.moodTwo .active .praiseicon {
+  animation:myfirst .3s;
+}
+@keyframes myfirst
+{
+0%   {transform: rotate(1)}
+50%  {transform: rotate(1.5)}
+100% {transform: rotate(1)}
+}
+ .moodTwo .moodImg {
+  margin-top: 10rpx;
+}
+.moodTwo .moodImg image {
+  width: 170rpx;
+  height: 170rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+ .moodTwo .praiseiconActive {
+  font-size: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+}  
+.moodTwo .company {
+  position: absolute;
+  right: 20rpx;
+  top: 0rpx; 
+  height: 60rpx;
+  width: 60rpx;
+}
+.moodTwo .company button {
+  width: 36rpx;
+  height: 36rpx;
+  background-color: #fff;
+  border: none;
+  padding:0;
+  border-radius: 0;
+}
+.moodTwo .company button::after{
+  border: 0;
+}
+.moodTwo .company image {
+  float: right;
+  width: 36rpx;
+  height: 36rpx;
+}
+.moodTwo .moodImg .active {
+  width: 480rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}

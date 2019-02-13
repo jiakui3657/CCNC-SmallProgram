@@ -1,0 +1,157 @@
+/* pages/index/signUp/signUp.wxss */
+.header {
+  text-align: center;
+  /* box-shadow: inset 0px 2rpx 3rpx #ccc; */
+  padding-bottom: 75rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  /* margin-top: 130rpx; */
+  /* transition: all .5s; */
+}
+.header image {
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 50%;
+  margin: 25rpx 0;
+}
+.header view {
+  color: #666;
+  font-size: 30rpx;
+}
+.header view text {
+  color: #333;
+  font-weight: 600;
+}
+.switchAdditional {
+  padding: 30rpx 47rpx;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 25rpx;
+}
+/* .switchAdditional .state {
+  width: 39rpx;
+  height: 39rpx;
+  border-radius: 50%;
+  border: 1rpx solid #069b48;
+  text-align: center;
+  line-height: 39rpx;
+  float: left;
+}
+.switchAdditional .state text {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 6rpx 4rpx;
+} */
+.switchAdditional .molecular {
+  color: #666;
+  font-size: 30rpx;
+  float: left;
+  font-weight: 600;
+}
+.additional .todo {
+  margin-top: 7rpx;
+  overflow: hidden;
+}
+.additional .todo .list {
+  width: 197rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  margin-left: 20rpx;
+  margin-bottom: 25rpx;
+  border: 1rpx solid #d2d2d2;
+  border-radius: 10rpx;
+  text-align: center;
+  float: left;
+}
+.additional .todo .list .many {
+  color: #f44040;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.additional .todo .list .num {
+  color: #999;
+  font-size: 22rpx;
+  font-weight: 600;
+  margin-top: 0rpx;
+}
+.additional input {
+  padding-left: 20rpx;
+  height: 116rpx;
+  line-height: 116rpx;
+  color: #666;
+  margin: 0 20rpx;
+}
+.additional .todo .active {
+  background-color: #b21e23;
+  border-color: #b21e23;
+}
+.additional .todo .active .many,.num {
+  color: #fff;
+}
+.additional .todo .active .num {
+  color: #fff;
+}
+.pay {
+  margin-top: 25rpx;
+  padding: 10rpx 20rpx 15rpx 20rpx;
+  background-color: #fff;
+}
+.pay .title {
+  height: 95rpx;
+  line-height: 95rpx;
+  color: #666;
+  font-weight: 600;
+  padding-left: 16rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+.pay .way{
+  height: 156rpx;
+  line-height: 156rpx;
+  padding-left: 15rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.pay .way:last-child{
+  border-bottom: 0rpx solid #f1f1f1;
+}
+.pay .way image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.pay .way .change {
+  font-size: 30rpx;
+  color: #666;
+  font-weight: 600;
+  margin-left: 38rpx;
+  vertical-align: middle;
+}
+.pay .way .amount {
+  font-size: 48rpx;
+  color: #b21e23;
+  font-weight: 600;
+  margin-left: 48rpx;
+  vertical-align: middle;
+}
+.pay .way .amount text {
+  font-size: 28rpx;
+}
+.release {
+  width: 100%;
+  height: 98rpx;
+  line-height: 98rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  background-color: #b21e23;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  box-shadow: 0px -1rpx 3rpx #ccc;
+  border-radius: 0;
+}
+.release::after {
+  border-radius: 0;
+}

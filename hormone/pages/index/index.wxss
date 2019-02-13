@@ -1,0 +1,357 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+map{
+  width: 100%; 
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 1;
+}
+.center{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -23rpx;
+  margin-top: -36rpx;
+  height: 72rpx;
+  width: 46rpx;
+  z-index:111;
+}
+.we{
+  position: fixed;
+  bottom: 200rpx;
+  left: 0rpx;
+  height: 100rpx;
+  width: 145rpx;
+  z-index:111;
+}
+.initial{
+  position:fixed;
+  bottom:60rpx;
+  left:50rpx;
+  width:100rpx;
+  height:100rpx;
+  z-index:1111;
+}
+.upgrade{
+  position: fixed;
+  bottom: 180rpx;
+  right: 50rpx;
+  z-index: 1111;
+  text-align: center;
+}
+.upgrade .upgradeImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  z-index: 1111;
+}
+.upgrade .text {
+  font-size: 28rpx;
+  color: #666;
+}
+.phone{
+  position: fixed;
+  bottom:60rpx;
+  right:50rpx;
+  width:100rpx;
+  height:100rpx;
+  z-index:1111;
+}
+.card{
+  position: fixed;
+  bottom: 72rpx;
+  left: 0%;
+  right: 0%;
+  width: 330rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #9e108c;
+  z-index: 111;
+   margin: 0 auto; 
+  font-size: 44rpx;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: -2rpx 0 15rpx #808080,0 -2rpx 15px #808080,0 2rpx 15rpx #808080,2rpx 0 15rpx #808080;
+}
+.card cover-image{
+  width: 44rpx;
+  height: 44rpx;
+  margin-top:28rpx;
+}
+.card cover-view{
+  line-height:92rpx;
+}
+.activity{
+  position: absolute;
+  top: 35rpx;
+  left: 0rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  width: 680rpx;
+  height: 210rpx;
+  border-radius: 20rpx;
+  z-index: 111;
+  box-shadow: -2rpx 0 15rpx #808080,0 -2rpx 15px #808080,0 2rpx 15rpx #808080,2rpx 0 15rpx #808080;
+  overflow: hidden;
+}
+.activity cover-image{
+  position: absolute;
+  top: -50%;
+  left: 0rpx;
+  height:382rpx;
+}
+.activity .title{
+  color: #fff;
+  font-size: 40rpx;
+  z-index: 1111;
+  font-weight: 600;
+  text-align:center;
+}
+.activity .name{
+  color: #fff;
+  font-size: 26rpx;
+  z-index: 1111;
+  display:inline-block;
+  vertical-align: middle;
+  margin-right: 28rpx;overflow:visible;
+
+}
+.activity .introduce{
+  color: #fff;
+  width: 100%;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.activity .box{
+  margin-top: 25rpx;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.activity .box .points{
+  width: 4rpx;
+  height: 23rpx;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 auto;
+  
+}
+.activity .time{
+  color: #fff;
+  font-size: 28rpx;
+  display:inline-block;
+  vertical-align: middle;
+  margin-left: 28rpx;
+overflow:visible;
+
+}
+.activity .money{
+  color: #fff;
+  font-size: 36rpx;
+  margin-top: 25rpx;
+  position: absolute;
+  right: 40rpx;
+  top: -5rpx;
+}
+.activity .money cover-view{
+  float: right;
+  font-size:26rpx;
+  margin-top:10rpx;
+}
+.shadow{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  height: 100%;
+  border-radius: 20rpx;
+  background-color: rgba(0,0,0,.5);
+  padding: 25rpx 30rpx;
+  box-sizing:border-box;
+  overflow: hidden;
+}
+.vip{
+  position: absolute;
+  top: 40rpx;
+  left: 0rpx;
+  right: 0rpx;
+  color: #fff;
+  font-size: 36rpx;
+  z-index: 1111;
+  width: 680rpx;
+  height: 350rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.vip .vipCard{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 1111;
+  width: 680rpx;
+  height: 350rpx;
+  border-radius: 20rpx;
+}
+.vip .vipCode{
+  position:absolute;
+  top:80rpx;
+  right:82rpx;
+  z-index:11111;
+  width:180rpx;
+  height:180rpx;
+  border:1rpx solid #000;
+  border-radius:20rpx;
+}
+.vip .photo{
+  position:absolute;
+  top:130rpx;
+  left:80rpx;
+  z-index:11111;
+  width:100rpx;
+  height:100rpx;
+  border-radius:49rpx;
+}
+.vip .vipName{
+  position:absolute;
+  top:160rpx;
+  left:192rpx;
+  z-index:11111;
+  font-size:28rpx;
+}
+.vip .time {
+  position:absolute;
+  top:350rpx;
+  left:484rpx;
+  z-index:11111;
+  font-size:22rpx;
+  width:60rpx;
+  height:32rpx;
+  border:1rpx solid #fff;
+  text-align:center;
+  line-height:32rpx;
+}
+.vip .endTime {
+  position:absolute;
+  bottom:36rpx;
+  right:90rpx;
+  z-index:11111;
+  font-size:22rpx;
+}
+
+.vip .hmlogo {
+  position:absolute;
+  top:160rpx;
+  right:28rpx;
+  z-index:11111111;
+  width:34rpx;
+  height:34rpx;
+  background-color: #9e108c;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 38rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.store{
+  position: absolute;
+  top: 35rpx;
+  left: 0rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  color: #fff;
+  z-index: 1111;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  width: 680rpx;
+  height: 320rpx;
+  text-align: left;
+}
+.store .shadow{
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+.store .store-bj{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  height:auto;
+}
+.store .title{
+  /* position: absolute;
+  top: 40rpx;
+  left: 40rpx; */
+  color: #fff;
+  font-size: 36rpx;
+  z-index: 1111;
+  width: 400rpx;
+  overflow:hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.store .money{
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  color: #fff;
+  z-index: 1111;
+  font-size: 32rpx;
+}
+.store .introduce{
+  /* position: absolute;
+  top: 100rpx;
+  left: 40rpx; */
+  color: #fff;
+  font-size: 28rpx;
+  white-space:pre-wrap;
+  margin-top:15rpx;
+}
+.store .reservation{
+  position: absolute;
+  bottom: 40rpx;
+  right: 156rpx;
+  color: #fff;
+  width: 130rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+  text-align: center;
+  font-size: 28rpx;
+  background-color: #9f108c;
+  border-radius: 32rpx;
+}
+.store .navigation{
+  position: absolute;
+  bottom: 25rpx;
+  right: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  z-index: 1111;
+}
+.personal{
+  position: fixed;
+  left: 0rpx;
+  top: 0rpx;
+  height: 100%;
+  width: 66.6%;
+  background-color: #fff;
+  z-index: 11111;  
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  background-color: rgba(255,255,255,1); 
+  z-index: 111111111;
+}

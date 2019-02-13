@@ -1,0 +1,42 @@
+<!--pages/we/activityDetails/activityDetails.wxml-->
+<view class='main'>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="true" interval="3000" duration="300" indicator-dots='true' indicator-color='#918f8e' indicator-active-color='#fff' circular='true' style='width:100%;height:440rpx;'>
+    <block wx:for="{{data.image}}" wx:key="unique" style='width:100%;height:100%;'>
+      <swiper-item style='height:440rpx;width:100%;' >
+        <image mode="aspectFill" src="{{item}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+<view class='container'>
+  <view class='title'>{{data.name}}</view>
+  <view class='secondary'>{{data.venue}} | {{data.distance}} | {{data.catalog}}</view>
+  <view class='address'>
+    <text>{{data.address}}</text>
+      <image class='merchantsphone' src='../../img/merchantsphone.png' catchtap='phone' data-phone="{{data.phone}}"></image>
+      <image class='merchantsnavigation' src='../../img/merchantsnavigation.png' catchtap='map' data-lngend='{{data.lng}}' data-latend='{{data.lat}}'></image>
+    </view>
+  <text class='introduce' style='padding-bottom:{{data.showFoot?"150rpx":"60rpx"}};'>{{data.note}}
+  </text>
+</view>
+<view class='navigation' wx:if='{{data.showFoot}}'>
+  <view class='money' wx:if="{{data.residue<=0}}">￥<text>{{data.money}}</text></view>
+  <view class='money' wx:if="{{data.residue>0}}">(会员价￥<text>{{data.vip}}</text>)</view>
+  <view class='securities' catchtap='securities'>购买消费劵</view>
+</view>
+</view>
+<view class='modal' wx:if='{{flag}}' catchtap='down'>
+  <view class='footer' animation="{{animationData}}" catchtap='return'>
+    <view class='number'>
+      <text>购买数量</text>
+      <text class='add' catchtap='add'>+</text>      
+      <text class='num'>{{num}}</text>
+      <text class='reduction' catchtap='reduction'>-</text>
+    </view>
+    <view class='total'>
+      <text>合计金额</text>
+      <view class='money'>￥<text>{{money}}</text></view>
+    </view>
+    <button catchtap='pay'>确认支付</button>
+  </view>
+</view>

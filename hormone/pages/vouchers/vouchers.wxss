@@ -1,0 +1,65 @@
+/* pages/vouchers/vouchers.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.container{
+  padding: 0 25rpx;
+  padding-bottom: 25rpx;
+}
+.list{
+  margin-top: 30rpx;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 36rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 40rpx;
+  color: #aaa;  
+  overflow: hidden;
+}
+.list .left{
+  width: 36rpx;
+  height: 36rpx;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: -18rpx;
+  top: 50%;
+  margin-top: -18rpx;
+  z-index: 1111;
+  background-color: #f4f4f4;  
+}
+.list .right{
+  width: 36rpx;
+  height: 36rpx;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  right: -18rpx;
+  top: 50%;
+  margin-top: -18rpx;
+  z-index: 1111;
+  background-color: #f4f4f4;
+}
+.list .title{
+  display: flex;
+  justify-content:space-between;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.list .time{
+  font-size:32rpx;
+  border-bottom:1rpx solid #ddd;
+  padding:20rpx 0;
+}
+.list .address{
+  font-size:32rpx;
+  padding:20rpx 0;
+}
+.list image{
+  position: absolute;
+  right: -10rpx;
+  bottom: -30rpx;
+  width: 190rpx;
+  height: 175rpx;
+}

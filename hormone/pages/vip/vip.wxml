@@ -1,0 +1,26 @@
+<!--pages/vip/vip.wxml-->
+<view class='container'>
+  <view class='card'>
+    <image class='bj' src='../../img/vb.png'></image>
+    <image class='code' src='../../img/code.jpg'></image>
+    <image class='avatar' src='../../img/avatar.png'></image>
+    <view class='name'>{{flag?'xx':shareName}}</view>
+    <view class='money'>￥<text>198</text>/年</view>
+    <!-- <view class='original'></view> -->
+  </view>
+  <view class='giving'>{{flag?"现在入会":"朋友分享价"}}<text>{{flag?card.money:card.share}}</text>/年{{flag?"，并赠送消费券（任选一张）":""}}</view>
+  <view class='securities' wx:for='{{list}}' catchtap='choose' id='{{item.id}}' wx:if='{{flag}}'>
+    <image src='../../img/securities.png'></image>
+    <view class='name'>{{item.name}}</view>
+    <view class='presented'>{{item.note}}</view>
+    <view class='address'><image src='../../img/vipAddress.png'></image> {{item.address}}</view>
+    <image class='choose' src='{{id==item.id?"../../img/selected.png":"../../img/uncheck.png"}}'></image>
+    <view class='money'><text>￥</text>{{item.money}}</view>
+    <button class='phone' open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber"></button>
+  </view>
+  <view class='introduce'>
+    <view class='title'>卡劵介绍</view>
+    <text>{{card.demo}}</text>
+  </view>
+</view>
+<button class='pay' open-type="getUserInfo" type="getUserInfo" bindgetuserinfo='card' id='{{card.id}}'>购买会员卡</button>

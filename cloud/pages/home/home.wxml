@@ -1,0 +1,31 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <view class='information'>
+    <view class='personal'>
+      <view class='company'>{{information.code==0?information.companyName:'公司'}}</view>
+      <view class='name'>{{information.code==0?information.name:'姓名'}}</view>
+      <view class='status'>{{information.code==0?information.job:'职务'}}</view>
+      <view class='phone'>{{information.code==0?information.phone:'联系方式'}}</view>
+      <view class='editor' catchtap='editor'>编辑</view>
+    </view>
+      <view class='code' style='padding-top:145rpx;' wx:if="{{information.code!=0}}">
+      <text>还未创建自己的名片</text>
+      <view class='create' catchtap='create'>创建</view>
+    </view>  
+     <view class='code' wx:if="{{information.code==0}}">
+      <image src='{{information.image}}' style='width:360rpx;height:360rpx;margin-top:20rpx;margin-bottom:10rpx;'></image>
+      <view class='create' style='margin-top:0rpx;'>分享给好友
+        <button class='share' open-type="share" type="primary" hover-class="other-button-hover" ></button>
+      </view>
+    </view> 
+    <image class='flicking' src='../image/flicking.png' catchtap='flicking'></image>
+  </view>
+  <view class='tab'>
+    <view class='list' style='color:#5996e1;font-size:40rpx;'>
+      我的名片
+    </view>
+    <view class='list' catchtap='contact'>
+      名片夹
+    </view>
+  </view>
+</view>

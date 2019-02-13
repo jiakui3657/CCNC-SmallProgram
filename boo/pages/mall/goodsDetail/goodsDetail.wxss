@@ -1,0 +1,9 @@
+/* pages/mall/goodsDetail/goodsDetail.wxss */
+.imgview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+image{
+  width: 100%;
+}

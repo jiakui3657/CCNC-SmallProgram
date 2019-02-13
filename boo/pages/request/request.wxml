@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="nav">
+    <view class="item {{selected == index ? 'red' : 'default'}}" bindtap="selected" wx:key="*this" wx:for="{{navTab}}" id='{{index}}'>{{item.name}}</view>
+ </view>
+   <view class="{{selected == 0 ? 'show' : 'hidden'}}">
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">{{information.phone==""?"请输入电话号码...":information.phone}}</button> 
+      <!-- <input wx:key="unique" class="input" name="userName" placeholder='请输入所属机构名称...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='writeNameInstitution' value='{{information.nameInstitution}}'/>
+      <input wx:key="unique" class="input" name="userName" placeholder='请输入职位名称...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='writeJobTitle' value='{{information.jobTitle}}'/>  -->
+      <view class="replace {{tempFilePaths != '' ? 'show' : 'hidden'}}" bindtap="chooseimage">
+        <image src='{{tempFilePaths}}' mode='aspectFill'></image> 
+      </view>
+     <view class="file {{tempFilePaths != '' ? 'hidden' : 'show'}}" bindtap="chooseimage">
+        <image src='../images/file.jpg'></image>
+        <text>点击添加名片...</text>
+     </view>
+     <button class='submit' catchtap='submit1' disabled='{{disabled}}'>提交申请</button>
+ </view> 
+ <view class="{{selected == 1 ? 'show' : 'hidden'}}">
+     <input type='number' wx:key="unique" class="input" name="userName" placeholder='请输入使用者手机号...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='enterprisephone' value='{{enterprise.phone}}'/> 
+    <!-- <input type='number' wx:key="unique" class="input" name="userName" placeholder='请输入公司简称...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='enterprisename' value='{{enterprise.name}}'/>   -->
+    <view class="replace {{tempFilePaths != '' ? 'show' : 'hidden'}}"  bindtap="chooseimage1">
+      <image src='{{tempFilePaths}}' mode='aspectFill'></image> 
+    </view>
+    <view class="file {{tempFilePaths != '' ? 'hidden' : 'show'}}" bindtap="chooseimage1">
+      <image src='../images/file.jpg'></image>
+      <text>点击添加营业执照图片...</text>
+    </view>
+    <!-- <view class="replace {{tempFilePaths2 != '' ? 'show' : 'hidden'}}"  bindtap="chooseimage2">
+      <image src='{{tempFilePaths2}}' mode='aspectFill'></image> 
+      </view>
+    <view class="file {{tempFilePaths2 != '' ? 'hidden' : 'show'}}" bindtap="chooseimage2">
+      <image src='../images/file.jpg'></image>
+      <text>点击添加营业执照图片...</text>
+    </view> -->
+    <button class='submit' catchtap='submit' disabled='{{disabled}}'>提交申请</button>    
+ </view> 
+</view>
+

@@ -1,0 +1,68 @@
+<!--pages/we/record/record.wxml-->
+<view class="map_container">
+  <view class="nav">
+    <view class="item {{selected == index ? 'red' : 'default'}}" bindtap="selected" wx:key="*this" wx:for="{{navTab}}" id='{{index}}'>{{item.name}}</view>
+  </view>
+</view>
+<view class="{{selected == 0 ? 'show' : 'hidden'}}">
+  <view class='totalNumber'>
+    <text class='number'>已发出{{participate.number}}个红包</text>
+    <view>总金额：
+      <text class='totalAmount'>{{participate.money}}</text>
+      <text class='over'></text>
+    </view>
+  </view>
+  <view class='todo'>
+    <view class='list {{flag==item.id?"active":""}}' catchtap='open' wx:key="unique" wx:for="{{initiateList}}" id='{{item.id}}'>
+      <view class='top'>
+        <view class='date' style='font-size:48rpx;'>{{item.day > 9?item.day:"0"+item.day}}
+          <text style='font-size:24rpx;'>{{item.month>9?item.month:"0"+item.month}}</text>
+          <text style='font-size:24rpx'>月</text>
+        </view>
+        <view class='num'>
+          <text class='money'>发出红包{{item.money}}元</text>
+          <image src='../../images/arrow.jpg'></image>
+          <view>
+            <text class='start'>{{item.openNum}}</text>/{{item.num}}</view>
+        </view>
+      </view>
+      <view class='ul' style='height:{{flag==item.id?item.datas.length*74:0}}rpx'>
+        <view class='li' wx:key="unique" wx:for="{{item.datas}}">
+          {{item.date}}
+          <text>{{item.name}}抢得{{item.money}}元</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="{{selected == 1 ? 'show' : 'hidden'}}">
+  <view class='totalNumber'>
+    <text class='number'>已抢到{{initiate.number}}个红包</text>
+    <view>总金额：
+      <text class='totalAmount'>{{initiate.money}}</text>
+      <text class='over'></text>
+    </view>
+  </view>
+  <view class='todo'>
+    <view class='list {{flag==item.id?"active":""}}' catchtap='open' wx:key="unique" wx:for="{{participateList}}" id='{{item.id}}'>
+      <view class='top'>
+        <view class='date' style='font-size:48rpx;'>{{item.day > 9?item.day:"0"+item.day}}
+          <text style='font-size:24rpx;'>{{item.month>9?item.month:"0"+item.month}}</text>
+          <text style='font-size:24rpx'>月</text>
+        </view>
+        <view class='num'>
+          <text class='money'>抢到红包{{item.money}}元</text>
+          <image src='../../images/arrow.jpg'></image>
+          <view>
+            <text class='start'>{{item.openNum}}</text>/{{item.num}}</view>
+        </view>
+      </view>
+      <view class='ul' style='height:{{flag==item.id?item.datas.length*74:0}}rpx'>
+        <view class='li' wx:key="unique" wx:for="{{item.datas}}">
+          {{item.date}}
+          <text>{{item.name}}抢得{{item.money}}元</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

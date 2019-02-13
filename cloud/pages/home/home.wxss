@@ -1,0 +1,104 @@
+/* pages/home/home.wxss */
+page{
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.container{
+  height: 100%;
+}
+.information{
+  height: 990rpx;
+  width: 670rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: -2rpx 0 10rpx #eee,0 -2rpx 10px #eee,0 2rpx 10rpx #eee,2rpx 0 10rpx #eee;
+  margin: 0 auto;
+  padding: 57rpx 60rpx;
+  box-sizing: border-box;
+  color: #666;
+  position: relative;
+}
+.personal{
+  padding-bottom: 62rpx;
+  border-bottom: 2rpx solid #eee;
+  position: relative;
+}
+.code{
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+.code text{
+  color: #b3b3b3;
+  font-size: 32rpx;
+}
+.code .create {
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  background: #5996e1;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  font-size: 32rpx;
+  position: relative;
+}
+.code .create button {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 280rpx;
+  height: 78rpx;
+  opacity: 0
+}
+.flicking{
+  position: absolute;
+  bottom: -62rpx;
+  right: 36rpx;
+  width: 110rpx;
+  height: 110rpx;
+}
+.information .company{
+  font-size: 32rpx;
+  color: #999;
+}
+.information .editor{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  font-size: 28rpx;
+  color: #7a93b2;
+}
+.information .name{
+  color: #666;
+  font-size: 48rpx;
+  margin-top: 68rpx;
+  font-weight: 600;
+}
+.information .status{
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 26rpx;
+}
+.information .phone{
+  font-size: 30rpx;
+  margin-top: 26rpx;  
+  color: #999;
+}
+.tab{
+  height: 160rpx;
+  line-height: 160rpx;
+  width: 670rpx;
+  margin: 10rpx auto;
+  display: flex;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.tab .list{
+    margin-left: 92rpx;
+    font-size: 30rpx;
+    color: #666;
+}

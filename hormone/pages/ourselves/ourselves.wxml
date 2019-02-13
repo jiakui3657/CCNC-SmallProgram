@@ -1,0 +1,26 @@
+<!--pages/ourselves/ourselves.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image src='../../img/logo.png'></image>
+    <view>荷尔蒙</view>
+  </view>
+  <view class='main'>
+    <view>的点点滴滴多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多的点点滴滴多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+    <view>的点点滴滴多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多的点点滴滴多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多的点点滴滴多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多多</view>
+  </view>
+  <view class='footer'>
+    <view class='title'>联系我们</view>
+    <view class='phone'>
+      <image src='../../img/number.png'></image>
+      电话：028-8888-8888
+    </view>
+    <view class='email'>
+      <image src='../../img/email.png'></image>
+      邮箱：admin@hormonr.com
+    </view>
+    <view class='address'>
+      <image src='../../img/address.png'></image>
+      地址：西安市太白南路39号
+    </view>
+  </view>
+</view>

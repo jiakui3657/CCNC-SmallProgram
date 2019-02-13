@@ -1,0 +1,40 @@
+<!--pages/pay/pay.wxml-->
+<view class='container'>
+  <view class='merchants'>
+    <image src='{{image}}'></image>
+    <view class='title'>{{name}}</view>
+    <view class='introduce'>会员特权：{{privilege}}</view>
+  </view>
+  <view class='money'>
+    <text>￥</text>
+    <input type='digit' disabled="{{disabled}}" value='{{money}}' bindinput='val' placeholder='请输入支付金额' placeholder-style='color: #999;font-size:36rpx;'></input>
+  </view>
+  <view class='pay'>
+    <view class='list' data-type="cash" catchtap='choose' wx:if='{{paymentType==1}}'>
+      <image class='avatar' src='../../img/hrmpay.png'></image>
+      <view class='way'>
+        <text>余额支付</text>
+        <text style='margin-left:30rpx;font-weight:600;'>￥{{moneyToggle}}</text>
+        <!-- <button catchtap='topUp'>充值</button> -->
+      </view>
+    </view>
+    <view class='list' data-type="wxapp" catchtap='choose' wx:if='{{paymentType==0}}'>
+      <image class='avatar' src='../../img/wx.png'></image>
+      <view class='way'>
+        <text>微信支付</text>
+      </view>
+    </view>
+  </view>
+  <radio-group class="group">
+    <view class="label-2" wx:for="{{radioItems}}" id='{{item.id}}' data-index='{{index}}' catchtap='radioChange'>
+      <!-- <view class="label-2__icon">
+        <view class="label-2__icon-checked" style="opacity:{{item.select? 1: 0}}"></view>
+      </view> -->
+      <view>
+        <image class="label-2__icon" src='{{!item.select?"../../img/uncheck.png" : "../../img/selected.png"}}'></image>
+      </view>
+      <view class="label-2__text" style=''><text>{{item.name}}：{{item.note}} ￥{{item.money}}</text></view>
+    </view>
+  </radio-group>
+  <view class='zf' catchtap='pay'>支付</view>
+</view>

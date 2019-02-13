@@ -1,0 +1,79 @@
+/**app.wxss**/
+
+page {
+  height: 100%;
+  font-family: "微软雅黑";
+}
+
+.container {
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+image {
+  vertical-align: top;
+}
+
+/* 选择框 */
+
+.state {
+  width: 39rpx;
+  height: 39rpx;
+  /* border-radius:50%; *//* border:1rpx solid #069b48; *//* text-align:center; *//* line-height:39rpx; */
+  float: right;
+  margin-right: 90rpx;
+  vertical-align: middle;
+}
+
+/* .state text {
+  width:30rpx;
+  height:30rpx;
+  border-radius:50%;
+  display:inline-block;
+  margin:6rpx 4rpx;
+} */
+
+/* .special .state text {
+  background-color:#069b48;
+} */
+
+/*商城底部tab栏*/
+
+.nav-bottom {
+  z-index: 999;
+  position: fixed;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: rgb(44, 28, 28);
+  opacity: 0.95;
+
+}
+
+.bottomNavButton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100rpx;
+  text-align: cnter;
+  border-radius: 0rpx;
+  line-height: 100rpx;
+  letter-spacing: 5rpx;
+  padding: 0;
+  color: #000;
+  font-size: 38rpx;
+  width: 255rpx;
+  background-color: rgb(230, 183, 97);
+}
+

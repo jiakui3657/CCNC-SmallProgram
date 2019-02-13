@@ -1,0 +1,27 @@
+<!--pages/addActivity/addActivity.wxml-->
+<view class='container'>
+  <view class='elements'>
+    <input placeholder='活动名称' placeholder-class='active' bindinput='name' value='{{name}}'></input>
+    <input type='digit' placeholder='活动价格' placeholder-class='active' bindinput='money' value='{{money}}'></input>
+    <input type='digit' placeholder='会员价格' placeholder-class='active' bindinput='vip' value='{{vip}}'></input>
+    <view class='time'>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          {{!startState?'开始时间：':startTime}}
+        </view>
+      </picker>
+      <text>至</text>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChangeTwo" bindcolumnchange="bindMultiPickerColumnChangeTwo" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          {{!endState?'截止时间：':endTime}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='picture'>
+    <textarea placeholder='活动介绍' placeholder-class='active' maxlength='-1' auto-height='true' show-confirm-bar='false' fixed='true' bindinput='note' value='{{note}}'></textarea>
+    <image mode="aspectFill" src='{{item}}' wx:for='{{src}}'></image>    
+    <image mode="aspectFill" src='../image/add.jpg' catchtap='open' wx:if='{{src.length<9}}'></image>
+  </view>
+  <button catchtap='addActivity'>确认添加</button>
+</view>

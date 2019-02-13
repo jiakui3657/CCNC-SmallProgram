@@ -1,0 +1,29 @@
+<!--pages/index/projectDetails/projectDetails.wxml-->
+<view class='container'>
+  <image src='{{item.logo}}' class='banner'></image>
+  <view class='main'>
+    <view class='title'>{{item.name}}</view>
+    <view class='time'>时间：{{item.date}}</view>
+    <view class='number'>人数：{{item.num}}人</view>
+    <text>{{item.note}}</text>
+  </view>
+
+  <view class='signUp'>
+  <view class='has' catchtap='bounce'><image src='../../images/arrow.png' class='{{flag?"active":""}}'></image>已报名</view>
+  <view class='immediately' catchtap='signUp'>{{item.haveJoin?"已报名":"立即报名"}}</view>
+</view>
+</view>
+  <view class='mask' wx:if="{{flag}}" catchtap='down'>
+    <view class='footer' catchtap='return false' animation="{{animationData}}">
+      <view class='title'>已报名的人（{{item.joins.length}}）</view>
+      <scroll-view class='content' scroll-y="true">
+        <view class='list' wx:for="{{item.joins}}" wx:key="unique">
+          <text class='name'>{{item.member.name}}</text>
+          <text>{{item.member.job}}</text>
+          <text>{{item.member.companyName}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+

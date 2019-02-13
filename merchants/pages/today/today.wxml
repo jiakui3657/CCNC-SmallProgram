@@ -1,0 +1,15 @@
+<!--pages/today/today.wxml-->
+<view class='container'>
+  <view class='list' wx:for="{{list}}">
+    <view class='company'>
+      <text class='name'>{{item.name}}</text>
+      <text>{{item.companyName}}{{item.job}}</text>
+    </view>
+    <view class='phone'>
+      <text>电话：{{item.phone}}</text>
+      <text class='vip'>{{item.cadCatalog}}</text>
+    </view>
+    <view class='time'>入场时间：{{item.date}}</view>
+  </view>
+</view>
+

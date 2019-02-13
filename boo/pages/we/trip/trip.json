@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "行程交易",
+  "backgroundTextStyle": "dark",
+  "window": {
+    "enablePullDownRefresh": true
+  }
+}

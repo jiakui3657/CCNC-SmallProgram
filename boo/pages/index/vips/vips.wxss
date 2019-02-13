@@ -1,0 +1,29 @@
+.container {
+  padding: 0 20rpx;
+  background-color: #eee;
+  /* height:100%; */
+}
+.list {
+  margin-top: 20rpx;
+  position: relative;
+  padding: 40rpx 41rpx 40rpx 41rpx;
+  border-radius: 10rpx;
+  background: #fff;
+}
+image {
+  width: 188rpx;
+  height: 188rpx;
+  border-radius: 10rpx;
+  float: left;
+}
+.basis {
+  padding-left: 220rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.name {
+  color: #666;
+  font-size: 36rpx;
+  font-weight: 600;
+}

@@ -1,0 +1,10 @@
+<!--pages/shareDetails/shareDetails.wxml-->
+<view style='padding: 30rpx;'>
+  <text class='bounty' space='emsp' decode='true' style='font-size:30rpx;'>1.被分享人可以在分享页面以优惠价格开通荷尔盟会员
+2.被分享人在分享页面成功开通荷尔盟会员后即会和分享人绑定（同一个账号只能绑定一次）
+3.被分享人在分享页面成功开通荷尔盟会员后分享人会按照比例获取分享佣金（到期续费也可以获取佣金）
+4.荷尔盟即将推出餐厅食神卡，被分享人可以在分享页面以优惠价格购买
+5.荷尔盟会员更多分享权益即将来袭
+6.荷尔盟会员解释权归本公司所有</text> 
+</view>
+

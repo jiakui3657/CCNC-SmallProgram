@@ -1,0 +1,27 @@
+<!--pages/we/we.wxml-->
+<view class='container'>
+  <view class='information'>
+    <view class='list'>
+      <text>*</text>
+      <view class='name'>姓名</view>
+      <input bindinput="name" value='{{name}}'></input>
+    </view>
+    <view class='list'>
+      <text>*</text>
+      <view class='name'>手机号</view>
+      <input value='{{phone}}'></input>
+      <button class='share' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>
+    </view>
+    <view class='list'>
+      <text></text>
+      <view class='name'>公司</view>
+      <input bindinput='company' value='{{company}}'></input>
+    </view>
+    <view class='list'>
+      <text></text>
+      <view class='name'>职务</view>
+      <input bindinput='job' value='{{job}}'></input>
+    </view>
+  </view>
+  <button catchtap='submit' disabled='{{disabled}}' class='submit'>保存</button>
+</view>

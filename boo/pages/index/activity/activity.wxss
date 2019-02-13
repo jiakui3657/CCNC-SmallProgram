@@ -1,0 +1,122 @@
+page{
+  background-color: #f3f3f3;
+}
+.container{
+  padding: 20rpx 48rpx 46rpx 48rpx;
+  font-size: 26rpx;
+  height: auto;
+  background-color: #fff;
+}
+textarea{
+  width: 100%;
+  padding: 10rpx;
+  height: 180rpx;
+  color: #666;
+}
+.list{
+  border-bottom:1rpx solid #e3e3e3;
+  overflow: hidden;
+  height:120rpx;
+  line-height:120rpx;
+  display: flex
+}
+.list .title{
+  margin-left: 46rpx;
+  color: #7f9abf;
+  font-weight: 400;
+  font-size: 30rpx;
+}
+.list .active {
+  font-size: 30rpx;
+  color: #ccc;
+  font-weight: 400;
+}
+.list .name{
+  font-weight: 600;
+  color: #666;
+  font-size: 30rpx;
+  float: left;
+}
+input{
+  /* float: left; */
+  margin-left: 50rpx;
+  font-size: 30rpx;
+  height:120rpx;
+  line-height:120rpx;
+}
+.release{
+  background-color: #b21e23;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  width: 90%;
+  margin: 50rpx auto;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.imgs {
+  overflow: hidden;
+  padding: 40rpx 0;
+  border-bottom:1rpx solid #e3e3e3;
+}
+.imgs .file {
+  position: relative;
+  float: left;
+  margin-right: 12rpx;
+  margin-top: 12rpx;
+}
+.imgs .file image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.imgs .file .icon {
+  position: absolute;
+  right: -20rpx;
+  top: -30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 60rpx;
+}
+.imgs .last {
+  width: 148rpx;
+  height: 148rpx;
+  border: 2rpx dotted #dcdcdc;
+  text-align: center;
+  line-height: 148rpx;
+}
+.imgs .last image {
+  width: 64rpx;
+  height: 64rpx;
+  margin-top: 42rpx;
+}
+.pick_datetime {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    overflow:hidden;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 101
+}
+.pick_datetime_tool {
+    display:flex;
+    justify-content:space-between;
+    height:92rpx;
+    line-height:92rpx;
+    border-top:4rpx solid #eee;
+    border-bottom:4rpx solid #eee;
+    padding:0 20rpx;
+    background: #fff;
+}
+.pick_datetime_ok {font-weight:bold;}
+.pick_datetime_clear {color:#666;}
+.pick_datetime picker-view {
+    font-size:34rpx;
+}
+.pick_datetime_column {
+    height:40px;
+    line-height:40px;
+    text-align:center;
+}

@@ -1,0 +1,27 @@
+<!--pages/storeDetails/storeDetails.wxml-->
+<view class='main'>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="true" interval="3000" duration="300" indicator-dots='true' indicator-color='#918f8e' indicator-active-color='#fff' circular='true' style='width:100%;height:422rpx;'>
+    <block wx:for="{{data.image}}" wx:key="unique" style='width:100%;height:100%;'>
+      <swiper-item style='height:422rpx;width:100%;' >
+        <image src="{{item}}" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+<view class='container'>
+  <!-- <view class='title'>{{data.name}}</view> -->
+  <view class='address'>
+    <text>{{data.address}}</text>
+    <image class='merchantsnavigation' src='../../img/merchantsnavigation.png' catchtap='map'></image>
+  </view>
+  <text class='introduce'>{{data.note}}
+  </text>
+</view>
+<view class='navigation'>
+  <view class='money' catchtap='map'>
+    <image src='../../img/merchantsnavigation.png'></image>
+    <text>去这里</text>
+  </view>
+  <view class='securities' catchtap='securities'>预约</view>
+</view>
+</view>

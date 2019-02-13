@@ -1,0 +1,91 @@
+<!--pages/components/dynamic/dynamic.wxml-->
+  <view class='activityOne about activity' id="{{item.id}}" data-money="{{item.haveRedPacket}}" data-likes='{{item.liked}}' catchtap='activityDetails' wx:if="{{toggin==0}}">
+    <view class='on'>
+      <image class='portrait' src='{{item.member.avatar}}' catchtap='details' data-name="{{item.member.name}}" id="{{item.member.id}}"></image>
+      <view class='area'>
+        <view class='information'>
+          <text class='name'>{{item.member.name}}</text>
+          <text class='position' wx:if="{{item.member.job!=''}}"> - {{item.member.job}}</text>
+          <text class='position' style='display:inline-block;padding:0rpx 10rpx;padding-bottom:3rpx;background-color:#b21e23;color:#fff;margin-left:10rpx;font-size:24rpx;border-radius:20rpx;' wx:if="{{item.member.catalog!='会员'}}">{{item.member.catalog}}</text>
+          <view class='company' catchtap='share'>
+          <!-- <button class='share' id="{{item.id}}" data-active="{{item.catalog}}" data-src="{{item.images[0].url}}" open-type="share" type="primary" hover-class="other-button-hover" >
+            <image src='../../images/share.png'></image>
+          </button> -->
+          </view>
+        </view>
+        <view class='companys'>{{item.member.companyName}}　{{item.date}}</view>
+        <text class='title' decode='true' space='true'>{{item.activity.note}}</text>
+        <view class='time'><text>活动时间：</text>{{item.activity.date}}</view>
+        <view class='place' catchtap='open' data-longitude="{{item.activity.lng}}" data-latitude="{{item.activity.lat}}"><text>集合地点：</text>{{item.activity.address}}</view>
+        <view class='moodImg' hidden='{{item.images.length==0?true:false}}'>
+          <image wx:key="unique" mode="aspectFill" wx:for="{{item.images}}" wx:for-item="it" data-list="{{item.images}}"  src='{{it.url}}' data-src="{{it.url}}" catchtap='preview' class='{{item.images.length==1?"active":""}}'></image>
+        </view>
+        <!-- <view class='positioning' wx:if='{{item.address!=null}}' catchtap='open' data-longitude="{{item.lng}}" data-latitude="{{item.lat}}">
+          <image src='../../images/location.png'></image>             
+          <text>{{item.address}}</text>
+        </view>  -->
+      </view> 
+    </view>
+    <view class='under clearfix' style='padding-left:100rpx'>
+      <view class='left' style='width:33.3%;text-align:left;'>
+        <image src='../../images/sign.png'></image>
+        <view class='number'>
+          <text class='start' wx:if="{{item.activity.num!=0}}">{{item.activity.joinNum}}</text>
+          <text class='end'>{{item.activity.num==0?'无上限':'/'+item.activity.num}}</text>
+        </view>
+      </view>
+      <view class='content' style='width:33.3%;' catchtap='comments' data-index="1" id="{{item.id}}">
+        <image class='commentsicon' src='../../images/commentsImg.png'></image>  
+        <text class='comments'>{{item.comments}}</text>
+      </view>
+       <view class='right {{togg?"active":""}}' catchtap='praise' id='{{item.id}}' data-flag="{{item.liked}}" style='width:33.3%'>
+        <image class='praiseicon' wx:if="{{flag}}" src='{{item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+        <image class='praiseicon' wx:else src='{{!item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+        <text class='praisenumber' wx:if="{{flag}}">{{item.likes}}</text>  
+        <text class='praisenumber' wx:else>{{item.liked?item.likes-1:item.likes+1}}</text> 
+      </view>
+    </view>
+  </view>
+  <view class='activityTwo about activity' id="{{item.id}}" data-money="{{item.haveRedPacket}}" data-likes='{{item.liked}}' catchtap='activityDetails' wx:if="{{toggin==1}}">
+    <view class='on'>
+      <text class='date'>{{item.date}}</text>
+      <view class='area'>
+        <view class='company' catchtap='share'> 
+          <button class='share' id="{{item.id}}" data-active="{{item.catalog}}" data-src="{{item.images[0].url}}" open-type="share" type="primary" hover-class="other-button-hover">
+            <image src='../../images/share.png'></image>
+          </button>
+          </view> 
+        <text class='title' decode='true' space='true'>{{item.activity.note}}</text>
+        <view class='time'><text>活动时间：</text>{{item.activity.date}}</view>
+        <view class='place'><text>集合地点：</text>{{item.activity.address}}</view>
+        <view class='moodImg' hidden='{{item.images.length==0?true:false}}'>
+          <image wx:key="unique" mode="aspectFill" wx:for="{{item.images}}" wx:for-item="it" data-list="{{item.images}}"  src='{{it.url}}' data-src="{{it.url}}" catchtap='preview' class='{{item.images.length==1?"active":""}}'></image>
+        </view>
+        <!-- <view class='positioning' hidden='{{item.address==null?true:false}}'>
+          <image src='../../images/location.png'></image>             
+          <text>{{item.address}}</text>
+        </view>  -->
+      </view> 
+    </view>
+    <view class='under clearfix' style='padding-left:120rpx;'>
+      <view class='left' style='width:33.3%'>
+        <view class='navigator' hover-class="none" catchtap='request'>
+          <image src='../../images/sign.png'></image>
+        </view>
+        <view class='number'>
+          <text class='start' wx:if="{{item.activity.num!=0}}">{{item.activity.joinNum}}</text>
+          <text class='end'>{{item.activity.num==0?'无上限':'/'+item.activity.num}}</text>
+        </view>
+      </view>
+      <view class='content' style='width:33.3%;' catchtap='comments' data-index="1" id="{{item.id}}">
+        <image class='commentsicon' src='../../images/commentsImg.png'></image>  
+        <text class='comments'>{{item.comments}}</text>
+      </view>
+      <view class='right {{togg?"active":""}}' catchtap='praise' id='{{item.id}}' data-flag="{{item.liked}}" style='width:33.3%'>
+        <image class='praiseicon' wx:if="{{flag}}" src='{{item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+        <image class='praiseicon' wx:else src='{{!item.liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}'></image>
+        <text class='praisenumber' wx:if="{{flag}}">{{item.likes}}</text>  
+        <text class='praisenumber' wx:else>{{item.liked?item.likes-1:item.likes+1}}</text> 
+      </view>
+    </view>
+  </view>

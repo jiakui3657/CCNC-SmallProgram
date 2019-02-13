@@ -1,0 +1,6 @@
+{
+  "publicComponents": {
+    "map": "components/map/map"
+  },
+  "main": "index.js"
+}

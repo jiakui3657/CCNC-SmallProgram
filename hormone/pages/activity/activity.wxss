@@ -1,0 +1,70 @@
+/* pages/activity/activity.wxss */
+page{
+  background-color: #f5f5f5;
+  padding-bottom: 30rpx;
+  
+}
+.list{
+  width: 680rpx;
+  height:350rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  position: relative;
+  overflow: hidden;
+}
+.list image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+.list view{
+   position: absolute;
+   width: 100%;
+   color: #fff;
+   text-align: center;
+}
+.list .title{
+  top: 35rpx;
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.introduce{
+  top: 95rpx;
+  font-size: 28rpx;
+}
+.time{
+  top:145rpx;
+  font-size:28rpx;
+}
+.money{
+  top: 234.5rpx;
+  font-size: 26rpx;
+}
+.end{
+  margin-left: 40rpx;
+}
+.type{
+  bottom: 40rpx;
+  font-size: 24rpx;
+}
+.type span{
+  display: inline-block;
+  width: 1rpx;
+  height: 25rpx;
+  margin: 0 20rpx;
+  background-color: rgba(255, 255, 255, .5);
+  vertical-align: middle;
+}
+.shadow{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 20rpx;
+}

@@ -1,0 +1,111 @@
+/* pages/we/withdrawal/withdrawal.wxss */
+.container{
+  background-color: #eee;
+}
+.container .withdrawal {
+  padding: 55rpx 30rpx 0rpx 30rpx;
+  background-color: #fff;
+}
+.container .withdrawal .balance {
+  font-size: 30rpx;
+  color: #333;
+}
+.container .withdrawal .amount {
+  font-size: 90rpx;
+  color: #f75544;
+}
+.number {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #d3d3d3;
+  overflow: hidden;
+}
+.number text {
+  font-size: 60rpx;
+  color: #666;
+  font-weight: 600;
+  margin-right: 20rpx;
+  display: inline-block;
+  float: left;
+}
+.number input{
+  margin-top: 30rpx;
+  font-size:30rpx;
+  color:#c0c0c0;
+}
+.poundage{
+  height: 95rpx;
+  line-height: 95rpx;
+  padding-left: 80rpx;
+  font-size: 30rpx;
+  color: #c0c0c0;
+}
+.bankCard {
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding-bottom: 86rpx;
+}
+.title{
+  text-align: center;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-weight: 600;
+  color: #666;
+  font-size: 36rpx;
+  border-bottom: 1rpx solid #c7c7c7;
+}
+.list {
+  padding: 41rpx 30rpx;
+  overflow: hidden;
+  border-bottom: 1rpx solid #c7c7c7;
+}
+.list image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  float: left;
+  margin-left: 26rpx;
+}
+.list .bankInformation{
+  float: left;
+  font-size: 24rpx;
+  color: #bcbcbc;
+  margin-left: 30rpx;
+}
+.list .bankInformation .bank {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #333;
+}
+ .state{
+  /* width: 30rpx;
+  height: 30rpx;
+  border: 1rpx solid #bababa;
+  text-align: center;
+  line-height: 23rpx;
+  border-radius: 15rpx; */
+  float: left;
+  margin-top: 18rpx;
+}
+.last {
+  padding-left: 162rpx;
+}
+/* .active {
+  border: 1rpx solid #bababa;
+} */
+.active text {
+  background-color: #094;
+}
+button{
+  position: fixed;
+  bottom: 0rpx;
+  right: 0rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 98rpx;
+  height: 98rpx;
+  background-color: #b21e23;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 0;
+}

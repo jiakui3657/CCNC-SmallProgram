@@ -1,0 +1,135 @@
+/* pages/we/record/record.wxss */
+.nav {
+  width:100%;
+  height:92rpx;
+  box-shadow:0px 0px 3px #ccc;
+  }
+.nav .item {
+  line-height:88rpx;
+  height: 88rpx;
+  text-align:center;
+  color:#999;
+  font-size:32rpx;
+  width: 140rpx;
+  float: left;
+  margin-left: 148rpx;
+}
+.nav .item:last-child {
+  float: right;
+  margin-right: 148rpx;
+}
+.nav  .default {
+  color:#999;
+  }
+.nav .red {
+  color:#F75544;
+  border-bottom: 4rpx solid #f85542;
+  font-weight:bold;
+}
+.show {
+  display: block;
+  /* height: 100%; */
+}
+.hidden {
+  display:none;
+}
+.totalNumber{
+  height: 146rpx;
+  line-height: 146rpx;
+  border-bottom: 1rpx solid #d0d0d0;
+  padding: 0 30rpx;
+  overflow: hidden;
+}
+.totalNumber .number{
+  font-size:30rpx;
+  font-weight: 400;
+}
+.totalNumber view {
+  float: right;
+  font-weight: 600;
+  font-size:30rpx;
+}
+.totalNumber view .totalAmount{
+  font-size: 48rpx;
+  color: #F75544;
+  font-weight: 400;
+}
+.totalNumber view .over {
+  font-size: 30rpx;
+  color: #F75544;
+  font-weight: 400;
+}
+.todo{
+  padding: 45rpx 0 43rpx 0rpx;
+  height: 100%;
+}
+.top {
+  overflow: hidden;
+}
+.list {
+  position: relative;
+  
+}
+.ul {
+  background-color: #f8f8f8;
+  overflow: hidden;
+  height: 0rpx; 
+  transition: all .5s;  
+  width: 100%;
+}
+.top .date {
+  float:left;
+  font-weight:600;
+  color:#666;
+  line-height:99rpx;
+  width:160rpx;
+  text-align:center;
+}
+.top .date .day {
+  font-size: 48rpx;
+}
+.top .num {
+  float: right;
+  overflow: hidden;
+  width: 590rpx;
+  height: 105rpx;
+  line-height: 105rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  font-size: 30rpx;
+}
+.top .num view {
+  float: right;
+  color: #333333;
+  margin-right: 46rpx;
+}
+.top .num view text {
+  color: #999999;
+}
+.top .num image {
+  transform:rotate(90deg);
+  float: right;
+  width: 15rpx;
+  height: 27rpx;
+  display: inline-block;
+  margin-right: 30rpx;
+  margin-top: 40rpx;
+  transition:all .5s;
+}
+.top .num .money {
+  color: #999999;
+  margin-left: 32rpx;
+}
+.li{
+  height: 74rpx;
+  line-height: 74rpx;
+  color: #999;
+  font-size: 26rpx;
+  padding: 0 30rpx;
+}
+.li text{
+  color: #666666;
+  font-size: 30rpx;
+}
+.active .top .num image {
+  transform:rotate(0deg);
+}

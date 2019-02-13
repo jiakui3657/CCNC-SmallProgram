@@ -1,0 +1,116 @@
+.nav {
+  width:100%;
+  height:92rpx;
+  box-shadow:0px 0px 3px #ccc;
+  }
+.nav .item {
+  line-height:88rpx;
+  height: 88rpx;
+  text-align:center;
+  color:#999;
+  font-size:28rpx;
+  width: 140rpx;
+  font-weight:bold;
+  float: left;
+  margin-left: 148rpx;
+}
+.nav .item:last-child {
+  float: right;
+  margin-right: 148rpx;
+}
+.nav  .default {
+  color:#999;
+  }
+.nav .red {
+  color:#f85542;
+  border-bottom: 4rpx solid #f85542;
+}
+.show {
+  position: relative;
+  padding: 0 20rpx;
+  margin-top: 25rpx;
+  margin-bottom: 50rpx;
+  }
+input {
+  display: block;
+  border: 0;
+  border-bottom: 1rpx solid #e2e2e2;
+  padding-left: 20px;
+  font-size: 26rpx;
+  height: 125rpx;
+  line-height: 125rpx;
+}
+image {
+  width: 600rpx;
+  height: 400rpx;
+  margin: 57rpx auto 83rpx;
+}
+text{
+  width: 200rpx;
+  text-align: right;
+  display: inline-block;
+}
+.file {
+  width: 507rpx;
+  height: 286rpx;
+  margin: 57rpx auto 83rpx;
+  border: 1rpx solid #d2d2d2;
+  border-radius: 10rpx;
+}
+.replace{
+  text-align: center;
+  margin: 57rpx auto 83rpx;
+}
+.replace image{
+  width: 507rpx;
+  height: 286rpx;
+  border-radius: 10rpx;
+  margin: 0;
+}
+.file image {
+  width: 97rpx;
+  height: 97rpx;
+  margin: 68rpx auto 40rpx;
+  display: block;
+}
+.file text {
+  text-align: center;
+  display: block;
+  font-size: 22rpx;
+  color: #cacaca;
+  width: 100%;
+}
+.container .submit {
+  width: 508rpx;
+  border-top: 1rpx solid #000;
+  height: 98rpx;
+  line-height: 98rpx;
+  background-color: #f75644;
+  color: #fff;
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.hidden {
+  display:none;
+  text-align:center;
+}
+.show button {
+  height: 125rpx;
+  background-color: rgba(255,255,255,0);
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 101;
+  text-align: left;
+  font-size:26rpx;
+  line-height: 125rpx;
+  color:#b4b4b4;
+  border-bottom:1rpx solid #e2e2e2;
+}
+.show button::after{
+  border:none;
+}

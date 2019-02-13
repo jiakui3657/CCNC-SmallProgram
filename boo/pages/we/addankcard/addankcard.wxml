@@ -1,0 +1,6 @@
+<!--pages/we/addankcard/addbankcard.wxml-->
+ <view class='container'>
+  <view class='addBankCard'>请添加本人银行卡</view>
+  <input type='text' bindinput='{{item.event}}' wx:key="unique" wx:for="{{arr}}" placeholder='{{item.place}}' placeholder-style='font-size:30rpx;color:#a6a6a6;'></input>
+  <button catchtap='submit' disabled='{{disabled}}'>完成</button>
+</view> 

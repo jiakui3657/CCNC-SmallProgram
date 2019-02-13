@@ -1,0 +1,67 @@
+<view class='navigation'>
+  <swiper indicator-dots="{{indicatorDots}}" interval="{{interval}}" duration="{{duration}}">
+    <block>
+      <swiper-item>
+        <view wx:key="property" wx:for="{{tab}}" catchtap='{{item.event}}'>
+          <image src='{{item.src}}' mode='widthFix'></image>
+          <text>{{item.text}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="container {{money.code==0?'max-active':''}}" bindtap='todo'>
+  <view class='swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="ture" skip-hidden-item-layout="true" style='height:100%'>
+      <block wx:key="property" wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item.url}}" class="slide-image" height="344rpx" />
+          <!-- <text>{{item.name}}</text> -->
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='headlines'>
+    <view class='more' catchtap='headlinesTo'>
+      <image src='../../images/05.png'></image>
+    </view>
+    <view class='news'>
+      <swiper vertical="true" indicator-dots="{{indicatorDots}}" interval="5000" duration="{{duration}}" autoplay="{{autoplay}}" circular="true" skip-hidden-item-layout="true">
+        <block>
+          <swiper-item wx:key="property" wx:for="{{singular}}" wx:if="{{index<singular.length/2}}">
+            <view class='oneNews' catchtap='headlinesDetails' id='{{singular[index*2].id}}'>
+              <text>{{singular[index*2].title}}</text>
+              <image src='../../images/fire.png' hidden='true'></image>
+            </view>
+            <view catchtap='headlinesDetails' id='{{singular[index*2+1].id}}'>
+              <text>{{singular[index*2+1].title}}</text>
+              <image src='{{singular[index*2+1].title==null?"":"../../images/fire.png"}}' hidden='true'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <image class='we' src='{{image}}' bindtap='circle'></image>
+  </view>
+  <view class='content'>
+    <view wx:key="unique" wx:for="{{list}}">
+      <activity id='activity' wx:if="{{item.catalog==0}}" item='{{item}}' toggin="0"></activity>
+      <mood id='mood' wx:else item='{{item}}' toggin="0"></mood>
+      <view wx:if="{{index ==0 }}">
+        <ad unit-id="adunit-a90db25db8bfd15e"></ad>
+      </view>
+    </view>
+    <!-- <view class='virtual' wx:else>暂无数据</view>  -->
+  </view>
+
+</view>
+<view class='mask' wx:if="{{money.code==0}}" catchtap='cancel'>
+  <view class='money' catchtap='open' id='{{money.id}}'>
+    <image src='../../images/money.png'></image>
+    <view class='moneyTitle'>
+      <text>红包来自</text>
+      <view>{{money.name}} - {{money.companyName}}</view>
+    </view>
+  </view>
+</view>
+<image src='../../images/max-money.png' class='min-money' data-flag="{{minMoney.code}}" catchtap='minmoney' wx:if="{{minMoney.code==0}}"></image>

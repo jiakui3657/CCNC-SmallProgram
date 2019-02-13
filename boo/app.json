@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index/index",
+    "pages/request/request",
+    "pages/index/vips/vips",
+    "pages/index/headlines/headlines",
+    "pages/index/circle/circle",
+    "pages/index/mood/mood",
+    "pages/index/activity/activity",
+    "pages/map/map",
+    "pages/address/address/address",
+    "pages/we/we/we",
+    "pages/logs/logs",
+    "pages/address/details/details",
+    "pages/index/activityDetails/activityDetails",
+    "pages/index/signUp/signUp",
+    "pages/index/pay/pay",
+    "pages/index/moodDetails/moodDetails",
+    "pages/index/headlinesDetails/headlinesDetails",
+    "pages/index/introduce/introduce",
+    "pages/index/vipIntroduction/vipIntroduction",
+    "pages/index/project/project",
+    "pages/index/projectDetails/projectDetails",
+    "pages/index/projectSignUp/projectSignUp",
+    "pages/index/industry/industry",
+    "pages/index/results/results",
+    "pages/index/contract/contract",
+    "pages/index/goodsDetail/goodsDetail",
+    "pages/we/addMembers/addMembers",
+    "pages/we/addRecord/addRecord",
+    "pages/we/orders/orders",
+    "pages/we/record/record",
+    "pages/we/time/time",
+    "pages/we/wallet/wallet",
+    "pages/we/withdrawal/withdrawal",
+    "pages/we/addankcard/addankcard",
+    "pages/we/home/home",
+    "pages/we/vip/vip",
+    "pages/we/ability/ability",
+    "pages/we/activity/activity",
+    "pages/we/activityDetails/activityDetails",
+    "pages/we/storeDetails/storeDetails",
+    "pages/we/activation/activation",
+    "pages/we/trip/trip",
+    "pages/we/vouchers/vouchers"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b21e23",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#b21e23",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/homeActive.png"
+      },
+      {
+        "pagePath": "pages/address/address/address",
+        "text": "通讯录",
+        "iconPath": "pages/images/address.png",
+        "selectedIconPath": "pages/images/addressActive.png"
+      },
+      {
+        "pagePath": "pages/we/home/home",
+        "text": "我的",
+        "iconPath": "pages/images/we.png",
+        "selectedIconPath": "pages/images/weActive.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "pages/mall",
+      "pages": [
+        "supply/supply",
+        "order/order",
+        "goodsDetail/goodsDetail"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<!--pages/address/details/details.wxml-->
+<view class="map_container">
+  <view class='header'> 
+    <view class='we'>
+      <image src="{{member.avatar}}" data-src='{{member.avatar}}'     catchtap='amplification'></image>
+      <view class='basis'>
+        <view>
+          <text class='name'>{{member.name}}</text>
+          <text class='position'> - {{member.job}}</text>
+          <text class='position' style='padding:0rpx 10rpx;padding-bottom:3rpx;background-color:#fff;color:#b21e23;margin-left:10rpx;font-size:24rpx;border-radius:20rpx;' wx:if="{{member.catalog!='会员'}}">{{member.catalog}}</text>
+          <text class="company" catchtap='open' data-phone="{{member.phone}}">拨打电话</text>
+        </view>
+        <view class='phone'>{{member.companyName}}</view>
+        <!-- <view>
+          <image class="qositioning" src='../../images/location.png'></image>
+          <text class="qositioningName">{{address}}</text>
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <view class='content'>  
+    <view  wx:key="unique" wx:for="{{list}}">
+      <activity id='activity' wx:if="{{item.catalog==0}}" item='{{item}}' toggin="1"></activity>
+      <mood id='mood' wx:else item='{{item}}' toggin="1"></mood> 
+    </view>  
+  </view>
+</view>

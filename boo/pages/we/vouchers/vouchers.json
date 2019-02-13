@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "消费券",
+  "backgroundTextStyle": "dark",
+  "window": {
+    "enablePullDownRefresh": true
+  }
+}

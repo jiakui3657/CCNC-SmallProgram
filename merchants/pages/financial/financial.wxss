@@ -1,0 +1,117 @@
+/* pages/financial/financial.wxss */
+.container{
+  background-color: #f4f4f4;  
+}
+.header{
+  padding: 0 35rpx;
+  font-size: 28rpx;
+  background-color: #fff;
+  overflow:hidden;
+}
+.header .number{
+  margin: 60rpx 0 0rpx 0;
+  overflow: hidden;
+}
+.header .number .num{
+  float: left;
+  color: #666;
+  font-size: 32rpx;
+}
+.header .number .num span{
+  color: #666;
+  font-size: 40rpx;
+}
+.header .timeSearch{
+  color: #4d84cb;
+  margin: 40rpx 0 20rpx 0;
+  overflow: hidden;
+}
+.header .timeSearch .time{
+  width: 450rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  border-radius: 32rpx;
+  background-color: #f2f2f2;
+  color: #9a9a9a;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50rpx;
+  float: left;
+}
+.header .timeSearch .search{
+  width: 120rpx;
+  text-align: center;
+  height: 64rpx;
+  line-height: 64rpx;
+  background-color: #4e84cc;
+  color: #fff;
+  font-size: 28rpx;
+  margin-left: 12rpx;
+  border-radius: 32rpx;
+  float: right;
+}
+.center{
+  margin-top: 25rpx;
+  padding: 0 46rpx;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-bottom: 98rpx;
+}
+.state{
+  font-size: 28rpx;
+  background-color: #fff;
+  padding: 0 16rpx;
+  overflow:hidden;
+  border-bottom: 1rpx solid #ddd;
+}
+.pay{
+  float: right;
+  font-size: 34rpx;
+  color: #333;
+  height: 100rpx;
+  line-height: 95rpx
+}
+.list{
+  overflow: hidden;
+}
+.list .time{
+  height: 100rpx;
+  line-height: 95rpx;
+  color: #999;
+}
+.list view{
+  overflow: hidden;  
+}
+.list view .name{
+  margin-right: 32rpx;
+  font-size: 34rpx;
+  float: left;
+}
+.list .company{
+  margin-top: 35rpx;
+  color: #333;
+  font-size: 34rpx;
+  text-align: right;
+  padding:0 16rpx;
+
+}
+.list .company .money{
+  float:right;
+}
+.withdrawal{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 98rpx;
+  line-height: 95rpx;
+  background:linear-gradient(to right, #b30d66, #98119a);
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 0;
+}
+.withdrawal::after{
+  border-radius: 0;
+}

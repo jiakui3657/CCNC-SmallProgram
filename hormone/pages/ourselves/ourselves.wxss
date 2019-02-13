@@ -1,0 +1,50 @@
+/* pages/ourselves/ourselves.wxss */
+.container{
+  padding: 0 56rpx;
+}
+.header{
+  padding: 64rpx 0;
+  width: 100%;
+  text-align:center;
+}
+.header image{
+  width: 254rpx;
+  height: 130rpx;
+  margin: 0 auto;
+
+}
+.header view{
+  text-align: center;
+  color: #634c5f;
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+.main{
+  border-bottom: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+  padding-bottom: 70rpx;
+}
+.main view{
+  margin-top: 80rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.footer{
+  padding-top: 58rpx;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 28rpx;
+}
+.footer image{
+  width: 28rpx;
+  height: 28rpx;
+}
+.footer view{
+  margin-top: 28rpx;
+}
+.footer .title{
+  margin-top: 0rpx;
+  color: #666;
+  font-weight: 600;
+}

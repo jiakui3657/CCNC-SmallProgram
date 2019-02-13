@@ -1,0 +1,255 @@
+/* pages/employees/employees.wxss */
+.container{
+  padding: 0 22rpx;
+  box-sizing: border-box;
+  padding-bottom: 150rpx;
+  display: block;
+}
+.card{
+  /* height: 214rpx; */
+  margin: 30rpx 0 0rpx 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  text-align: center
+}
+.card .bj{
+  width: 680rpx;
+  height: 350rpx;
+  margin: 0 auto
+}
+.card .code{
+  width: 180rpx;
+  height: 180rpx;
+  position: absolute;
+  right:84rpx;
+  top: 100rpx;
+  border-radius:20rpx;
+}
+.card .avatar {
+  position:absolute;
+  top:125rpx;
+  left:80rpx;
+  z-index:11111;
+  width:100rpx;
+  height:100rpx;
+  border-radius:49rpx;
+}
+.container .card .name{
+  position:absolute;
+  top:154rpx;
+  left:192rpx;
+  font-size:28rpx;
+}
+.giving{
+  font-size: 30rpx;
+  color: #666;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  margin:20rpx 0;
+}
+.giving text{
+  font-size: 40rpx;
+  color: #9e108c;
+}
+.securities{
+  height: 245rpx;  
+  width: 100%;
+  overflow: hidden;  
+  position: relative;
+  color: #333;
+  margin-bottom:-10rpx;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.container .name{
+  position:absolute;
+  top:36rpx;
+  left:55rpx;
+  font-size:34rpx;
+  z-index:11111;
+  font-weight:600;
+}
+.container .card .money{
+  position:absolute;
+  top:140rpx;
+  left:30px;
+  z-index:11111;
+  font-size:26rpx;
+  color:#ddc074;
+}
+.container .money text{
+  font-size: 42rpx;
+}
+.container .original{
+  position: absolute;
+  bottom:34rpx;
+  right:84rpx;
+  z-index: 11111;
+  font-size: 24rpx;
+  color: #E2C06D;
+}
+.container .original text{
+  font-size: 42rpx;
+}
+.container .presented{
+  position:absolute;
+  top:90rpx;
+  left:55rpx;
+  z-index:11111;
+  font-size:26rpx;
+  width: 440rpx;
+}
+.container .card .title{
+  position: absolute;
+  top: 78rpx;
+  left: 30rpx;
+  z-index: 11111;
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 26rpx;
+  border: 1rpx solid #9c9c9c;
+  text-align: center;
+}
+.container .securities .choose{
+  position: absolute;
+  bottom: 55rpx;
+  right: 55rpx;
+  z-index: 111;
+  color: #666;
+  font-size: 26rpx;
+  width: 52rpx;
+  height: 52rpx;
+}
+.container .securities .money{
+  position: absolute;
+  top: 50rpx;
+  right: 60rpx;
+  z-index: 111;
+  color: #333;
+  font-size: 34rpx;
+}
+.container .securities .money text {
+  font-size: 24rpx;
+}
+.container  .address{
+  position: absolute;
+  bottom: 40rpx;
+  left: 55rpx;
+  z-index: 111;
+  font-size: 26rpx;
+}
+.container  .address image{
+  width: 20rpx;
+  height: 24rpx;
+}
+.container .introduce {
+  padding: 0 26rpx;
+}
+.container .introduce .title{
+  height: 82rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #e6e6e6;
+  display: block;
+  /* width: 100%; */
+  padding-left: 10rpx;
+  color: #666;
+}
+.container .introduce text{
+  font-size: 24rpx;
+  color: #666;
+  padding: 0 10rpx;
+  line-height: 24rpx;
+}
+.pay{
+  height: 98rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 98rpx;
+  color: #fff;
+  font-size: 32rpx;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  background: linear-gradient(to right, #b30d66, #98119a); 
+  border-radius: 0rpx;
+  box-shadow:0rpx 4rpx 15rpx #000,0rpx 0rpx 0rpx #ccc,0rpx 0rpx 0rpx #ccc,0rpx 0rpx 0rpx #ccc;
+  z-index: 1111
+}
+button::after{
+  border-radius: 0rpx;  
+  border: 0;
+}
+.phone{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  z-index: 11111;
+  display:inline-block;
+  padding:0;
+}
+
+.card1{
+  /* height: 214rpx; */
+  margin: 10rpx 0 0rpx 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  text-align: center
+}
+.card1 .bj{
+  width: 680rpx;
+  height: 350rpx;
+  margin: 0 auto
+}
+.card1 .code{
+  width: 180rpx;
+  height: 180rpx;
+  position: absolute;
+  right:84rpx;
+  top:80rpx;
+  border-radius:20rpx;
+}
+.card1 .avatar {
+  position:absolute;
+  top:125rpx;
+  left:80rpx;
+  z-index:11111;
+  width:100rpx;
+  height:100rpx;
+  border-radius:49rpx;
+}
+.card1 .name{
+  position:absolute;
+  top:154rpx;
+  left:192rpx;
+  font-size:28rpx;
+}
+input{
+  margin: 0 25rpx;
+  color: #999;
+  font-size:36rpx;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #ddd;
+  padding-left: 20rpx;
+}
+.card1 .money{
+  position:absolute;
+  top:15rpx;
+  right:84rpx;
+  z-index:11111;
+  font-size:26rpx;
+  color: #ddc074;
+}
+.card1 .money text{
+  font-size: 42rpx;
+}

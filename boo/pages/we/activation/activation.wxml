@@ -1,0 +1,12 @@
+<!--pages/we/activation/activation.wxml-->
+<view class='container'>
+  <view class='title'>
+    <text>尊贵的荷尔蒙会员卡用户</text>
+    <text>请输入荷尔蒙实体卡面上的会员编码来激活会员号</text>
+  </view>
+  <view class='vip'>
+    <image src='../../img/vip.png'></image>
+    <input placeholder='请输入激活码' placeholder-class='place' bindinput='content'></input>
+  </view>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">确认激活</button>
+</view>

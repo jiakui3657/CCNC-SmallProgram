@@ -1,0 +1,131 @@
+/* pages/index/projectDetails/projectDetails.wxss */
+ page{
+  overflow-y: hidden;   
+}
+.container{
+  height: 100%;   
+} 
+.banner{
+  width: 100%;
+  height: 380rpx;
+}
+.main{
+  padding: 0 30rpx;
+  padding-top: 60rpx;
+  padding-bottom: 100rpx;
+}
+.main view{
+  padding-bottom: 30rpx;
+}
+.main .title{
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #333;
+}
+.main .time{
+  color: #666;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.main .number{
+  color: #666;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.main text{
+  font-size: 30rpx;
+  color: #999;
+  line-height: 60rpx;
+  margin-top: 10rpx;
+}
+.signUp{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  overflow: hidden;
+  z-index: 103;
+}
+.signUp view{
+  float: left;
+  height: 97rpx;
+  line-height: 97rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.signUp .has{
+  width: 260rpx;
+  background-color: #faf9f9;
+  color: #999;
+  border-top: 1rpx solid #999;
+}
+.signUp .has image{
+  width: 18rpx;
+  height: 33rpx;
+  transform:rotate(90deg);
+  vertical-align: middle;
+  margin-right: 15rpx;
+  transition: all .3s;
+}
+.signUp .has .active{
+  transform:rotate(-90deg);
+}
+.signUp .immediately{
+  width: 490rpx;
+  background-color: #b21e23;
+  color: #fff;
+  font-weight: 600;
+  border-top: 1rpx solid #f75544;
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  background-color: rgba(0,0,0,.5);
+  overflow: hidden;
+  z-index: 101;
+}
+.footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  background-color: #faf9f9;
+  height: 0rpx; 
+  transition: all .5s; 
+}
+.footer .title{
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 600;
+  height: 94rpx;
+  line-height: 94rpx;
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+.footer .content {
+  height: 600rpx;  
+  padding-left: 60rpx;
+  box-sizing: border-box;
+  padding-bottom: 110rpx;
+}
+.footer .content .list {
+  padding-right: 30rpx;
+  line-height: 97rpx;
+  height: 97rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .content .list text {
+  color: #999;
+}
+.footer .content .list .name {
+  color: #666;
+  font-weight: 600;
+}
+.mask .active{
+  height: 700rpx;
+}

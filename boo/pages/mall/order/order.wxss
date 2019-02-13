@@ -1,0 +1,179 @@
+/* pages/mall/order/order.wxss */
+page {
+  color: #666;
+  font-family: "黑体";
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 10rpx solid gainsboro;
+}
+
+.content {
+  padding-top: 25rpx;
+}
+
+.input-placeholder {
+  font-size: 32rpx;
+  color: rgb(231, 221, 221);
+}
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  margin: 20rpx 0rpx;
+}
+
+.jiantou {
+  position: absolute;
+  right: 0rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.row text {
+  width: 25%;
+}
+
+.gsdz {
+  margin-top: 10rpx;
+}
+
+.row input {
+  color: #000;
+  width: 75%;
+}
+
+.row textarea {
+  width: 70%;
+  text-align: left;
+  padding-left: 0;
+  height: 125rpx;
+  border: 0.5rpx solid #dcdcdc;
+  border-radius: 21rpx;
+  padding: 8rpx;
+}
+
+.last {
+  margin: 0;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.item {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
+  position: relative;
+  width: 100%;
+  padding: 20rpx 40rpx;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 3rpx solid gainsboro;
+}
+
+.item image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.item-aa {
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+  font-size: 30rpx;
+  max-inline-size: 260rpx;
+}
+
+.item-num {
+  font-size: 35rpx;
+}
+
+.item-right {
+  position: absolute;
+  right: 40rpx;
+  font-size: 35rpx;
+}
+
+.mxfont {
+  font-size: 30rpx;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+}
+
+.zhif {
+  border: none;
+}
+
+.combined {
+  position: fixed;
+  left: 58rpx;
+  bottom: 25rpx;
+  font-size: 40rpx;
+}
+
+.orderMoney {
+  position: fixed;
+  left: 180rpx;
+  bottom: 25rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.button-hover {
+  color: rgb(206, 189, 189);
+}
+
+.pay {
+  padding-bottom: 150rpx;
+  background-color: #fff;
+}
+
+.pay .title {
+  height: 95rpx;
+  line-height: 95rpx;
+  color: #666;
+  font-weight: 600;
+  font-size: 30rpx;
+}
+
+.pay .title text {
+  margin-left: 40rpx;
+}
+
+.pay .way {
+  height: 130rpx;
+  line-height: 130rpx;
+  border-top: 1rpx solid #e3e3e3;
+}
+
+.pay .way image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 40rpx;
+}
+
+.pay .way .change {
+  font-size: 30rpx;
+  color: #666;
+  font-weight: 600;
+  margin-left: 38rpx;
+  vertical-align: middle;
+}
+
+.pay .way .amount {
+  font-size: 48rpx;
+  color: #ff8e2a;
+  font-weight: 600;
+  margin-left: 48rpx;
+  vertical-align: middle;
+}
+
+.pay .way .amount text {
+  font-size: 28rpx;
+}

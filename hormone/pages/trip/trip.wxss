@@ -1,0 +1,42 @@
+/* pages/trip/trip.wxss */
+.container{
+  /* padding: 0 25rpx;
+  text-align: left;
+  padding-bottom: 25rpx;
+  background-color: #f4f4f4;
+  min-height: 100%; */
+  flex-direction:column;
+justify-content:space-between;
+box-sizing:border-box;
+overflow:hidden;
+padding: 0
+}
+.container .list{
+  width: 100%;
+  min-height: 225rpx;
+  background-color: #fff;
+  padding: 0 35rpx;
+  box-sizing: border-box;
+}
+.name{
+  height: 128rpx;
+  line-height: 128rpx;
+  color: #333;
+  font-size: 32rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content:space-between;
+}
+.time{
+  height: 98rpx;
+  line-height: 98rpx;
+  color: #999;
+  border-top:1rpx solid #ddd;
+  font-size: 24rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content:space-between;  
+}
+.title{
+  font-weight: 600;
+}

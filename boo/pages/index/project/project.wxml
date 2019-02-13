@@ -1,0 +1,8 @@
+<!--pages/index/project/project.wxml-->
+<view class='container'>
+  <view class='list' wx:for="{{list}}" catchtap='projectDetails' id="{{item.id}}" wx:key="unique">
+    <image src='{{item.logo}}'></image>
+    <view class='title'>{{item.name}}<text class='time'>{{item.date}}</text></view>
+    <text>{{item.desc}}</text>
+  </view>
+</view>

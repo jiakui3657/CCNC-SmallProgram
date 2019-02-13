@@ -1,0 +1,40 @@
+<!--pages/history/history.wxml-->
+<view class='container'>
+  <view class='header'>
+    <view class='number'>
+      <view class='num'>总计<span>{{nameFlag?(searchFlag?total:searchTotal):nameTotal}}</span>人次</view>
+      <view class='timeSearch'>
+        <image src='../image/intersection.jpg'></image>
+        <span catchtap='timeShow'>时间搜索</span> 
+      </view>
+    </view>
+    <input class='search' placeholder='姓名搜索' placeholder-class='active' bindinput='input' wx:if='{{!search}}'></input>
+    <view class='timeSearch' wx:else>
+      <view class='time'>
+        <picker mode="date" value="{{date}}" bindchange="bindDateChangeStart">
+          <view class="picker">
+            {{start==''?"开始时间":start}}
+          </view>
+        </picker>
+        <text>至</text>
+        <picker mode="date" value="{{date}}" bindchange="bindDateChangeEnd">
+          <view class="picker">
+            {{end==''?"结束时间":end}}
+          </view>
+        </picker>
+      </view>
+      <button class='search' catchtap='search'>搜索</button>
+    </view>
+  </view>
+  <view class='list' wx:for="{{nameFlag?(searchFlag?list:timeList):nameList}}">
+    <view class='company'>
+      <text class='name'>{{item.name}}</text>
+      <text>{{item.companyName}}{{item.job}}</text>
+    </view>
+    <view class='phone'>
+      <text>电话：{{item.phone}}</text>
+      <text class='vip'>{{item.cadCatalog}}</text>
+    </view>
+    <view class='time'>入场时间：{{item.date}}</view>
+  </view>
+</view>

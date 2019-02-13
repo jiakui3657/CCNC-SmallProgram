@@ -1,0 +1,79 @@
+<!--pages/mall/supply/supply.wxml-->
+<view class='message'>
+  <image src='../../images/tishi.png'></image>
+  <text>{{message}}</text>
+</view>
+<view class='swiper'>
+  <swiper indicator-dots="true" indicator-active-color="#FFFFFF" autoplay="true" interval="5000" duration="500" circular="ture" skip-hidden-item-layout="true" style='height:100%'>
+    <block wx:key="{{index}}" wx:for="{{bannerlist}}">
+      <swiper-item>
+        <image src="{{item.titleImg}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='content'>
+
+  <scroll-view class='scrollMiddle left' scroll-y='true'>
+    <view class="navigation-item {{curnTab==index?'currentTab ':''}}" wx:for="{{channellist}}" wx:key="{{index}}" catchtap='switchTab' data-index='{{index}}'>
+      {{item.typeName}}
+    </view>
+    <view style='width:100%;height:150rpx;'></view>
+  </scroll-view>
+  
+  <scroll-view class='scrollMiddle right' scroll-y='true' scroll-with-animation='true' style='height:100%;'>
+    <view class='goods-item' wx:for="{{ channellist[curnTab].shopList}}" wx:key="{{item.id}}" data-id='{{item.id}}' data-url='{{item.url}}' catchtap='goodsDetail'>
+      <image class='goods-left' src='{{item.titleImg}}' data-preview='{{item.titleImg}}' mode='scaleToFill'></image>
+      <view class='goods-right'>
+        <text class='goods-name'>{{item.name}}</text>
+        <text class='oldprice'>原价:￥{{item.old_price}}</text>
+        <view class='goods-right-bottom'>
+          <text>￥{{item.price}}/{{item.standard}}</text>
+          <view class='addView' data-id='{{item.id}}' data-name='{{item.name}}' data-price='{{item.price}}' data-url='{{item.titleImg}}' data-describe='{{item.standard}}' catchtap='addGoods'>
+            <image class='bttn' src='../../images/add.png'></image>
+            <block wx:for="{{shopCart.shopList}}" wx:key="{{index}}" wx:for-item="numIt">
+              <view class='addNumView' wx:if="{{item.id ==numIt.id }}">{{numIt.num}}</view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style='width:100%;height:150rpx;background-color:#fff;'></view>
+  </scroll-view>
+</view>
+
+<view class='nav-bottom' bindtap="{{shopCart.totalSize>0?'clickShop':''}}">
+  <view class='shopcart'>
+  </view>
+  <image src='../../images/shopcart.png'></image>
+  <view class='num' hidden="{{shopCart.totalSize>0?false:true}}">{{shopCart.totalSize}}</view>
+  <view class='peisong' hidden="{{shopCart.totalSize>0?true:false}}">另需配送费￥{{peisongfei}}</view>
+  <view class='allprice' hidden="{{shopCart.totalSize>0?false:true}}">
+    ￥{{shopCart.allMoney}}
+  </view>
+  <view class='qisong' hidden="{{shopCart.allMoney>=qisongjia?true:false}}">￥{{qisongjia}}起送</view>
+  <button class='bottomNavButton' hover-class="button-hover" catchtap='submitOrder' hidden="{{shopCart.allMoney>=qisongjia?false:true}}">去结算</button>
+</view>
+<view class='viewShdow' hidden='{{shopCartShow}}' bindtap='clickShop'>
+</view>
+<scroll-view class='shopcartView' scroll-y='true' hidden='{{shopCartShow}}' style='height:{{shopCartHeight}}px;'>
+  <view class='deleteView'>
+    <view class='deleteViewrig' bindtap='clearShop'>
+      <image class='delImg' src='../../images/delete.png'></image>
+      <text>清空购物车</text>
+    </view>
+  </view>
+  <view class='orderItem' wx:for="{{shopCart.shopList}}" wx:key="{{index}}">
+    <text class='orderItem-name'>{{item.name}} </text>
+    <text class='orderItem-price'>￥{{item.totalPrice}}</text>
+    <view class='jsView'>
+      <view data-id='{{item.id}}' data-price='{{item.onePrice}}' bindtap='delGoods'>
+        <image class='bttn' src='../../images/jianhao.png'></image>
+      </view>
+      <text>{{item.num}}</text>
+      <view data-id='{{item.id}}' data-price='{{item.onePrice}}' bindtap='addGoods'>
+        <image class='bttn' src='{{addimg}}'></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>

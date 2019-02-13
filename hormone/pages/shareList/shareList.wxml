@@ -1,0 +1,9 @@
+<!--pages/shareList/shareList.wxml-->
+<view class='title'>赏金纪录</view>
+<view class='share'>
+  <view class='list' wx:for='{{list}}'>
+    <view>{{item.member.name}}</view>
+    <view>{{item.date}}</view>
+    <view>+￥{{item.money}}</view>
+  </view>
+</view>

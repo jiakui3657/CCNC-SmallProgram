@@ -1,0 +1,34 @@
+<!--pages/store/store.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image wx:for='{{res.images}}' src='{{item}}'></image>
+    <view class='mask'></view>
+    <text>{{res.name}}</text>
+  </view>
+  <view class='information'>
+    <view class='list'>
+      <text class='key'>负责人</text>
+      <text class='val'>{{res.charge}}</text>
+    </view>
+    <view class='list'>
+      <text class='key'>电话</text>
+      <text class='val'>{{res.phone}}</text>
+    </view>
+    <view class='list'>
+      <text class='key'>地址</text>
+      <text class='val'>{{res.address}}</text>
+    </view>
+    <view class='list'>
+      <text class='key'>持卡人</text>
+      <text class='val'>{{res.bankAccount}}</text>
+    </view>
+    <view class='list'>
+      <text class='key'>卡号</text>
+      <text class='val'>{{res.bankNo}}</text>
+    </view>
+    <view class='list'>
+      <text class='key'>开户行</text>
+      <text class='val'>{{res.bankName}}</text>
+    </view>
+  </view>
+</view>

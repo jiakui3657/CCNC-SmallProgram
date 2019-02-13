@@ -1,0 +1,29 @@
+.list{
+  border-bottom: 1rpx solid #d2d2d2;
+  padding: 50rpx 20rpx;
+  position: relative;
+}
+.world{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #666666;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.time {
+  color: #999999;
+  font-size: 30rpx;
+}
+.title{
+  font-size: 34rpx;
+  color: #333333;
+  font-weight: 600;
+  width: 700rpx;
+  display:inline-block;
+  overflow:hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}

@@ -1,0 +1,195 @@
+/**index.wxss**/
+page{
+  background-color: #eee;
+}
+.swiper{
+  height: 324rpx;
+}
+.swiper image {
+  width: 100%;
+  height: 324rpx;
+}
+.swiper swiper-item text {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 80rpx;
+  z-index: 11;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #fff;
+  overflow:hidden;
+  width: 100%;
+  text-align: center;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.navigation {
+  padding:20rpx 0rpx 20rpx 0rpx;
+  box-sizing: border-box;
+  background-color: #b21e23;
+}
+.navigation swiper {
+  height: 154rpx;
+}
+.navigation swiper-item {
+  flex-direction:row;
+  display: flex;
+}
+.navigation view {
+  flex: 1;
+  margin: 0 37rpx;
+  margin-top: 10rpx;
+}
+.navigation view image {
+  width: 97rpx;
+  height: 97rpx;
+  border-radius: 50%;
+  margin: 0 5rpx;
+}
+.navigation view text {
+  font-size: 27rpx;
+  color: #fff;
+  display: block;  
+  margin-top: 10rpx; 
+}
+.headlines {
+  height: 169rpx;
+  position: relative;
+  box-sizing: border-box;
+  border-top: 2rpx solid #e4e4e4;
+  overflow: hidden;
+  background-color: #fff;
+}
+.headlines .more {
+  float: left;
+  padding: 38rpx 20rpx 44rpx 20rpx;
+  border-right: 2rpx dotted #999899;
+  z-index: 101;
+}
+.headlines .more image {
+  width: 78rpx;
+  height: 87rpx;
+  
+}
+.headlines .news {
+  float: left;
+   width: 472rpx; 
+  height: 169rpx;
+  margin-left: 120rpx;
+  box-sizing: border-box;
+  position: absolute;
+  font-size: 28rpx;
+}
+.headlines .news view {
+  overflow: hidden;
+}
+.headlines .news text {
+  display: inline-block;
+  overflow:hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  height: 83rpx;
+  line-height: 83rpx;
+  color: #666;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+  max-width: 100%;
+  text-align:left;
+}
+.headlines .news image {
+  width: 30rpx;
+  height: 36rpx;
+  float: left;
+  margin: 15rpx 0 0 21rpx;
+}
+.headlines .news .oneNews {
+  border-bottom: 2rpx dotted #dcdcdc;
+}
+.headlines .we {
+  float: right;
+  width: 120rpx;
+  height: 119rpx;
+  border-radius: 50%;
+  margin: 26rpx 19rpx 0 0;
+}
+.content {
+  background-color: #eee;
+  overflow: hidden;
+}
+.virtual {
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.footer{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 98rpx;
+  background-color: #b21e23;
+  color: #fff;
+  flex-direction:row;
+  display: flex;
+}
+ .footer .navigator{
+  flex: 1;
+  text-align: center;
+  font-size:26rpx;
+}
+.footer .navigator .iconfont {
+  display: block;
+  margin-top: 12rpx;
+}
+.footer .active{
+  background-color: #fff;
+  color: #b21e23;
+} 
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 111;
+  text-align: center;
+}
+.mask .money {
+  position: absolute;
+  top: 250rpx;
+  left:50rpx;
+  width: 650rpx;
+  height: 480rpx;
+  border-radius: 40rpx;
+  text-align: center;
+}
+.mask .money image {
+  width: 100%;
+  height: 100%;
+}
+.moneyTitle {
+  position: absolute;
+  top: 70rpx;
+  font-size: 24rpx;
+  color: #fff;
+  width: 100%;
+}
+.moneyTitle view {
+  font-size: 36rpx;
+}
+.min-money{
+  position: fixed;
+  bottom: 20%;
+  right: 20rpx;
+  width: 110rpx;
+  height: 110rpx;
+}
+.max-active{
+  height: 100%;
+}

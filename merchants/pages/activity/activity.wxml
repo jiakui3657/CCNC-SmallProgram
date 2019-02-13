@@ -1,0 +1,22 @@
+<!--pages/activity/activity.wxml-->
+<view class='container'>
+  <view class='header'>
+    <view class='number'>总共<span>{{total}}</span>个活动</view>
+    <input class='search' placeholder='活动名称搜索' placeholder-class='active' bindinput='input'></input>
+  </view>
+  <view class='list' wx:for="{{flag?list:array}}" catchtap='activityDetails' id='{{item.id}}'>
+    <view class='company'>
+      <text class='name'>{{item.name}}</text>
+    </view>
+    <view class='time'>{{item.beginDate}}<span></span>{{item.endDate}}</view>
+    <view class='phone'>
+      <text>￥{{item.money}}</text>
+      <text class='vip'>特权会员：￥{{item.vip}}</text>
+    </view>
+    <view class='number'>
+      <view class='num'>消费数量：<span>{{item.joins}}</span>张</view>
+      <view class='total'>总金额：<span>￥{{item.totoalMoney}}</span></view>
+    </view>
+  </view>
+  <!-- <button catchtap='addActivity'>添加活动</button> -->
+</view>

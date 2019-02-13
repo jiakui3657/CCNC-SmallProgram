@@ -1,0 +1,11 @@
+
+
+  <view class="section">
+       <input bindinput="bindInput" placeholder="输入地址" focus="true"/> 
+  </view>
+  <view class="map_container">
+    <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location="true" markers="{{markers}}"></map>  
+  </view>
+  <view class="map_text {{flag==item.id ? 'active' : ''}}" wx:for="{{pois}}" catchtap='map' id='{{item.id}}' data-value='{{item.name}}' data-location="{{item.location}}">
+    <text class="h1">{{item.name}}</text>
+  </view>

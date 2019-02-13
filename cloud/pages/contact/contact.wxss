@@ -1,0 +1,142 @@
+/* pages/phone/phone.wxss */
+/* pages/home/home.wxss */
+page{
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.container{
+  height: 100%;
+}
+/* 搜索框 */
+.search{
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 670rpx;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+  position: relative;
+  /* margin-bottom: 30rpx;  */
+}
+.search input{
+  width: 100%;
+  height: 70rpx;
+  border-radius: 10rpx;
+  color: #b3b3b3;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  padding-left: 53rpx;
+}
+.search .text{
+  position: absolute;
+  top: 0rpx;
+  font-size: 30rpx;
+  color: #b3b3b3;
+  text-align: center;
+}
+.search .text image{
+  width: 27rpx;
+  height: 26rpx;
+  margin: 0 13rpx;
+}
+.information{
+  height: 888rpx;
+  width: 670rpx;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #666;
+  position: relative;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.information .shadow {
+  height: 170rpx;
+  position: absolute;
+  left: 0rpx;
+  bottom: 0rpx;
+  width: 100%;
+  background: linear-gradient(rgba(242,242,242,0),rgba(242,242,242,1))
+}
+.information .list {
+  width: 100%;
+  height: 316rpx;
+  box-sizing: border-box;
+  border-radius: 15rpx;
+  background-color: #fff;
+  padding: 54rpx 64rpx 66rpx 72rpx;
+  text-align: left;
+  margin-top: 30rpx;
+  position: relative;
+  box-shadow: -2rpx 0 10rpx #eee,0 -2rpx 10px #eee,0 2rpx 10rpx #eee,2rpx 0 10rpx #eee;
+}
+.information .list:nth-child(1){
+  margin-top: 0rpx;
+}
+.information .list .code{
+  width: 42rpx;
+  height: 42rpx;
+  position: absolute;
+  top: 53rpx;
+  right: 64rpx;
+}
+.information .list .phone{
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  bottom: 52rpx;
+  right: 60rpx;
+}
+.information .company{
+  font-size: 32rpx;
+  color: #999;
+}
+.information .name{
+  color: #666;
+  font-size: 48rpx;
+  margin-top: 40rpx;
+  font-weight: 600;
+}
+.information .status{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  color: #666;
+}
+.information .empty {
+  width: 353rpx;
+  height: 328rpx;
+  margin-top: 153rpx;
+}
+.information text {
+  font-size:32rpx;
+  color: #b3b3b3;
+  display: block;
+  margin-top: 120rpx;
+}
+.flicking{
+  position:absolute;
+  bottom:-62rpx;
+  right:36rpx;
+  width:110rpx;
+  height:110rpx;
+}
+.tab{
+  height: 160rpx;
+  line-height: 160rpx;
+  width: 670rpx;
+  margin: 10rpx auto;
+  /* background-color: pink; */
+  display: flex;
+  padding: 0 25rpx;
+  box-sizing: border-box;
+}
+.tab .list{
+    margin-left: 92rpx;
+    font-size: 30rpx;
+    color: #666;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,36 @@
+<!--pages/withdrawal/withdrawal.wxml-->
+<view class='container'>
+  <view class='balance'>当前余额：￥<text>{{res.money}}</text></view>  
+  <view class='information'>
+    <view class='money'>
+      <view class='amount'><text>提现余额：￥</text><input placeholder='金额' placeholder-class='active'  bindinput='money'></input></view>
+      <view class='minMoney'>单笔不少于100元</view>
+    </view>
+    <view class='name'>
+      <text>持卡人</text>{{res.bankAccount}}
+    </view>
+    <view class='number'>
+      <text>卡号</text>{{res.bankNo}}
+     </view>
+    <view class='where'>
+      <text>开户行</text>{{res.bankName}}
+    </view>
+  </view>
+  <!-- <view class='running'>
+    <view class='title'>提现记录</view>
+    <view class='list' wx:for='{{5}}'>
+      <view class='deductions'>
+        <text>提现扣款</text>
+        <view class='money'>
+          <text>- ￥</text>
+          50
+        </view>
+      </view>
+      <view class='time'>
+        <text>2018.08.11 21:15:15</text>
+        <text class='state'>审核中</text>
+      </view>
+    </view>
+  </view> -->
+  <button catchtap='withdrawal'>确认提现</button>
+</view>

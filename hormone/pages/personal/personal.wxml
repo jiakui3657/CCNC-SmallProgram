@@ -1,0 +1,32 @@
+<!--pages/personal/personal.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image src='{{avatar}}' catchtap='open'></image>
+    <view class='information'>
+      <view class='name'>{{name}} - {{job}}</view>
+      <view class='company'>{{companyName}}</view>
+      <view class='money' wx:if='money>0' style="margin-top:10rpx;padding:3rpx 5rpx;display:inline-block;border:1rpx solid #9e108c;" catchtap='balance'>￥{{money}}</view>
+      <view class='economize'>已为您节省{{economize}}元</view>
+    </view>
+  </view>
+  <view class='todo'>
+    <!-- <view class='list balance' catchtap='balance'>
+      <image src='../../img/trip.png'></image>
+      <view>
+        <text>我的余额</text>
+        <!-- <button catchtap='topUp'>充值</button>
+      <!-- </view>
+    </view> -->
+    <view class='list' wx:for="{{list}}" catchtap='{{item.event}}'>
+      <image src='{{item.src}}'></image>
+      <text>{{item.text}}</text>
+    </view>
+    <view class='employees' catchtap='employees'>员工中心</view>
+  </view>
+  <view class='modal' wx:if="{{modal}}" catchtap='open'>
+    <view class='min'>
+      <button catchtap='chooseimage'>获取本地图片</button>
+      <button open-type="getUserInfo"  bindgetuserinfo='wx'>获取微信图片</button>
+    </view>
+  </view>
+</view>

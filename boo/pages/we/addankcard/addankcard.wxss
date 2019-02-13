@@ -1,0 +1,29 @@
+/* pages/we/addankcard/addbankcard.wxss */
+.container {
+  padding: 15rpx 30rpx;
+}
+.addBankCard{
+  height: 116rpx;
+  line-height: 116rpx;
+  border-bottom: 1rpx solid #d3d3d3;
+  color: #333333;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+input{
+  height: 116rpx;
+  line-height: 116rpx;
+  border-bottom: 1rpx solid #d3d3d3;
+  font-size:30rpx;
+  color:#a6a6a6;
+}
+button {
+  width: 508rpx;
+  text-align: center;
+  height: 98rpx;
+  line-height: 98rpx;
+  color: #fff;
+  background-color: #b21e23;
+  font-size: 32rpx;
+  margin: 108rpx auto;
+}

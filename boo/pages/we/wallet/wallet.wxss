@@ -1,0 +1,55 @@
+/* pages/we/wallet/wallet.wxss */
+.header{
+  padding: 56rpx 30rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.header .balance {
+  font-size: 30rpx;
+  color: #333;
+}
+.header view .number {
+  font-size: 90rpx;
+  color: #f75544;
+}
+.header view .add {
+  float: right;
+  width: 160rpx;
+  text-align: center;
+  height: 64rpx;
+  line-height: 64rpx;
+  border: 1rpx solid #f75544;
+  color: #f75544;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  display: inline-block;
+  margin-top: 30rpx;
+}
+.list {
+  padding: 35rpx 30rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+.list .behavior {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.list .num {
+  font-size:32rpx;
+  font-weight:600;
+  color: #f75544;
+  float: right;
+  vertical-align: middle;
+  margin-top:5rpx;
+}
+.list .way {
+  font-size: 24rpx;
+  color: #a0a0a0;
+}
+.list .time {
+  float: right;
+  font-size: 24rpx;
+  color: #a0a0a0;
+  margin-top: 10rpx;
+}
+.list view {
+  overflow: hidden;
+}

@@ -1,0 +1,465 @@
+/* pages/components/dynamic/dynamic.wxss */
+.activityOne {
+  margin-top: 18rpx;
+  background-color: #fff;
+  padding: 29rpx 20rpx 0rpx 20rpx;
+}
+.activityOne .on {
+  border-bottom:1rpx solid #e6e6e6;
+  overflow: hidden;
+}
+.activityOne .on .area {
+  font-size: 30rpx;
+  overflow: hidden;
+  padding-left: 19rpx;
+  font-weight: 400;
+  padding-top:5rpx;
+  padding-bottom: 20rpx;
+}
+.activityOne .portrait {
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+.activityOne .information {
+  /* overflow: hidden; */
+  position: relative;
+}
+.activityOne .information .name {
+  font-weight:600;
+  font-size: 32rpx;
+  color: #333;
+}
+.activityOne .information .position {
+  font-weight:400;
+  font-size: 28rpx;
+  color: #666;
+}
+.activityOne .information .company {
+  /* float: right; */
+  margin-right: 20rpx;
+  width: 60rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 0rpx;
+}
+.activityOne .information .company button {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #fff;
+  border: none;
+  padding:0;
+  border-radius:0;
+  text-align: center;
+  line-height: 60rpx;
+}
+.activityOne .information .company button::after {
+  border: 0
+}
+.activityOne .information .company image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-top: 10rpx;
+}
+.activityOne .companys {
+  font-size: 24rpx;
+  color: #999;
+  font-weight: 400;
+}
+.activityOne .title{
+  margin-top: 16rpx;
+  text-indent:2rem;
+}
+.activityOne .time{
+  margin-top: 16rpx;
+  font-weight: 400;
+}
+.activityOne .place {
+  margin-top: 16rpx;
+  font-weight: 400;
+}
+.activityOne .positioning {
+  margin: 20rpx 0;
+}
+.activityOne .positioning image {
+  width: 28rpx;
+  height: 28rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.activityOne .positioning text {
+  color: #999;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+.activityOne .under {
+  height: 59rpx;
+  font-size: 18rpx;  
+  line-height: 59rpx;
+  display: flex;
+  justify-content:space-between;
+  padding: 10rpx 0;
+  text-align:center;
+  overflow:hidden;
+}
+.activityOne .under .left {
+  text-align: center;
+  padding-top:7rpx; 
+}
+.activityOne .under .left image {
+  width: 95rpx;
+  height: 45rpx;
+  float: left;
+  vertical-align: middle
+}
+.activityOne .under .left .number {
+  float: left;
+  height: 46rpx;
+  line-height: 46rpx;
+  margin-left: 10rpx;
+  overflow: hidden;
+   vertical-align: middle 
+}
+.activityOne .under .left .number .start,.end {
+  font-size: 24rpx;
+  color: #333;
+}
+.activityOne .under .left .number .start {
+  color: #999;
+}
+.activityOne .under .left .number .arrow {
+  margin-left: 20rpx;
+  width: 30rpx;
+  height:31rpx;
+  display: inline-block;
+  transform:rotate(-90deg);
+  transition:All 0.2s ease;
+  -webkit-transition:All 0.2s ease;
+}
+.activityOne .under .content {
+  text-align: center;
+}
+.activityOne .under .right {
+  position: relative;
+  text-align: center;
+}
+.activityOne .under .right .arrow {
+  display: inline-block;
+  color: #000;
+  margin-left: 27rpx;
+  transform:rotate(-90deg);
+  transition: all 0.2s ease;   
+  -webkit-transition: all 0.2s ease;  
+}
+.activityOne .under .right .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;
+}
+.activityOne .under .left .number .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;  
+}
+.activityOne .under .right .money {
+ vertical-align:midden;
+  color: #f44040;
+  margin-left: 13rpx;
+}
+.activityOne .under .right .praiseicon {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  /* margin-top: 10rpx; */
+}
+.activityOne .under .active .praiseicon {
+  animation:myfirst .3s;
+}
+@keyframes myfirst
+{
+0%   {width: 35rpx;height: 35rpx;}
+50%  {width: 45rpx;height: 45rpx;}
+100% {width: 35rpx;height: 35rpx;}
+}
+.activityOne .under .right .commentsicon {
+  color: #000;
+  vertical-align:midden;
+}
+.activityOne .under .right .moneyImg {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.activityOne .comments {
+  margin-left: 16rpx;
+  font-size: 26rpx;
+}
+.activityOne .commentsicon {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+}
+.activityOne .praisenumber {
+  font-size:26rpx;
+  vertical-align:middle;
+  margin-left:16rpx;
+  position:absolute;
+}
+.activityOne .moodImg image {
+  width: 170rpx;
+  height: 170rpx;
+  margin-right: 20rpx;
+}
+.activityOne .praiseiconActive {
+  font-size: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.activityOne .moodImg {
+  margin-top: 10rpx;
+}
+.activityOne .moodImg image {
+  width: 170rpx;
+  height: 170rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.activityOne .moodImg .active {
+  width: 480rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+
+
+
+
+
+
+
+
+
+.activityTwo {
+  background-color: #fff;
+  padding: 30rpx 20rpx 0rpx 20rpx;
+  margin-top: 18rpx;
+}
+.activityTwo .on {
+  overflow: hidden;
+}
+.activityTwo .on .area {
+  font-size: 30rpx;
+  overflow: hidden;
+  margin-left: 100rpx;
+  font-weight: 400;
+  border-bottom:1rpx solid #e6e6e6;
+  position: relative;
+  padding-left: 15rpx;
+  padding-bottom: 20rpx;
+}
+.activityTwo .on .area .title {
+  width:88%;
+  display:inline-block;
+}
+.activityTwo .date{
+  float:left;
+  margin-left:5rpx;
+  font-size:28rpx;
+  color:#999;
+  font-weight:400;
+}
+.activityTwo .portrait {
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+.activityTwo .companys {
+  font-size: 24rpx;
+  color: #8d8d8d;
+  font-weight: 400;
+  margin-top:5rpx;
+}
+.activityTwo .time{
+  margin-top: 16rpx;
+}
+.activityTwo .place {
+  margin-top: 16rpx;
+}
+.activityTwo .positioning {
+  margin: 16rpx 0;
+}
+.activityTwo .positioning image {
+  width: 23rpx;
+  height: 31rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.activityTwo .positioning text {
+  color: #999;
+  vertical-align: middle;
+  margin-left: 23rpx;
+}
+.activityTwo .under {
+  height:59rpx;
+  text-align:center;
+  font-size:18rpx;
+  line-height:59rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+.activityTwo .under .left {
+  padding: 7rpx 0;
+}
+.activityTwo .under .left .navigator {
+  float: left;
+  height: 45rpx;
+}
+.activityTwo .under .left .navigator image {
+  width: 95rpx;
+  height: 45rpx;
+}
+.activityTwo .under .left .number {
+  float: left;
+  height: 46rpx;
+  line-height: 46rpx;
+  margin-left: 10rpx;
+  overflow: hidden;
+}
+.activityTwo .under .left .number .start,.end {
+  font-size: 24rpx;
+  color: #333;
+}
+.activityTwo .under .left .number .start {
+  color: #999;
+}
+.activityTwo .under .left .number .arrow {
+  margin-left: 20rpx;
+  width: 30rpx;
+  height:31rpx;
+  display: inline-block;
+  transform:rotate(-90deg);
+  transition:All 0.2s ease;
+  -webkit-transition:All 0.2s ease;
+}
+.activityTwo .under .right {
+  float: right;
+  height: 57rpx;
+  line-height: 57rpx;
+  font-size: 26rpx;
+  position: relative;
+  text-align: center;
+}
+.activityTwo .under .right .arrow {
+  display: inline-block;
+  color: #000;
+  margin-left: 27rpx;
+  transform:rotate(-90deg);
+  transition: All 0.2s ease;   
+  -webkit-transition: All 0.2s ease;  
+}
+.activityTwo .under .right .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;
+}
+.activityTwo .under .left .number .rotateRight{
+  transform:rotate(0deg);
+  margin-left: 27rpx;
+  display: inline-block;  
+}
+.activityTwo .under .right .moneyImg {
+ vertical-align:midden;
+ width: 40rpx;
+ height: 40rpx;
+}
+.activityTwo .under .right .money {
+ margin-left: 14rpx;
+ color: #f44040;
+ font-size: 28rpx;
+}
+.activityTwo .under .right .commentsicon {
+  color: #000;
+  vertical-align:midden;
+}
+.activityTwo .comments {
+  margin-left: 16rpx;
+  vertical-align: middle;
+  color: #999;
+  font-size: 26rpx;
+}
+.activityTwo .commentsicon {
+  width: 39rpx;
+  height: 33rpx;
+  vertical-align: middle;
+}
+.activityTwo .praisenumber {
+  vertical-align: middle;
+  color: #999;
+  margin-left: 16rpx;
+}
+.activityTwo .praiseicon {
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align:text-bottom;
+}
+.activityTwo .under .active .praiseicon {
+  animation:myfirst .3s;
+}
+@keyframes myfirst
+{
+0%   {width: 35rpx;height: 35rpx;}
+50%  {width: 55rpx;height: 55rpx;}
+100% {width: 35rpx;height: 35rpx;}
+}
+.activityTwo .moodImg {
+  margin-top: 10rpx;
+}
+.activityTwo .moodImg image {
+  width: 170rpx;
+  height: 170rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.activityTwo .moodImg .active {
+  width: 480rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}
+.activityTwo .praiseiconActive {
+  font-size: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.activityTwo .company {
+  position: absolute;
+  right: 20rpx;
+  top: 0rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.activityTwo .company button {
+  width: 36rpx;
+  height: 36rpx;
+  background-color: #fff;
+  border: none;
+  padding:0;
+  border-radius: 0;
+}
+.activityTwo .company button::after {
+  border: 0;
+}
+.activityTwo .company image {
+  float: right;
+  width: 36rpx;
+  height: 36rpx;
+}
+.activityTwo .moodImg .active {
+  width: 480rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}

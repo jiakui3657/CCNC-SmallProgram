@@ -1,0 +1,40 @@
+<!--pages/topUp/topUp.wxml-->
+<view class='container'>
+  <view class='card'>
+    <image src='{{avatar}}'></image>
+    <view class='information'>
+      <view>{{name}}</view>
+      <view class='name'>￥{{money}}</view>
+    </view>
+  </view>
+  <view class='money'>
+    <view class='title'>请选择充值金额</view>
+    <view class='moneyList'>
+      <view class='list {{id==item.id?"active":""}}' wx:for="{{list}}" id='{{item.id}}' data-index='{{index}}' catchtap='money'>￥{{item.money}}</view>
+    </view>
+  </view>
+  <view class='securitiestitle' wx:if='{{false}}'>充值赠送消费券</view>
+  <view class='securities' wx:for="{{list[index].activitys}}" wx:if='{{false}}'>
+    <image class='bj' src='../../img/securities.png'></image>
+    <view class='name'>{{item.name}}</view>
+    <view class='presented'>{{item.note}}</view>
+    <view class='address'><image src='../../img/vipAddress.png'></image>{{item.address}}</view>
+    <view class='securitiesmoney'><text>￥</text>{{item.money}}</view>
+  </view>
+  <button style='width:50%;border-radius:10rpx;' catchtap='card' id='{{card.id}}'>充值</button>
+  <!-- <view class='share'>
+    <view class='shareList' catchtap='shareList'>好友列表</view>
+    <view class='shareDetails' catchtap='shareDetails'>分享介绍</view>
+  </view> -->
+  <view class='list' catchtap='shareList'>
+    <image src='../../img/shareList.png'></image>
+    <text>好友列表</text>
+  </view>
+  <view class='list' catchtap='shareDetails'>
+    <image src='../../img/shareDetails.png'></image>
+    <text>分享介绍</text>
+  </view>
+</view>
+<view class='pay'>
+  <button open-type="share" catchtap='share'>分享</button>
+</view>

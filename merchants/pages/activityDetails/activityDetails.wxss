@@ -1,0 +1,44 @@
+/* pages/activityDetails/activityDetails.wxss */
+.container{
+  background-color: #f4f4f4;
+}
+.list{
+  font-size: 28rpx;
+  background-color: #fff;
+  padding: 0 46rpx;
+  overflow:hidden;
+  margin-top: 25rpx;
+}
+.list:first-child{
+   margin-top: 0rpx;
+}
+.list .time{
+  height: 96rpx;
+  line-height: 90rpx;
+  color: #999;
+  border-top: 1rpx solid #ddd;
+  padding-left: 15rpx;
+}
+.list view{
+  overflow: hidden;  
+}
+.list .phone{
+  height: 85rpx;
+  line-height: 80rpx;
+  color: #999;
+  padding-left: 15rpx;
+}
+.list view .vip{
+  float: right;
+  color: #666;
+  font-size: 30rpx;
+}
+.list view .name{
+  margin-right: 32rpx;
+  font-size: 34rpx;
+}
+.list .company{
+  margin: 35rpx 0 5rpx 0;
+  color: #333;
+  padding-left: 15rpx;
+}

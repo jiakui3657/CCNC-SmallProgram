@@ -1,0 +1,45 @@
+<!--pages/we/home/home.wxml-->
+<map
+  id="myMap"
+  scale='{{15}}'
+  latitude="{{latitude}}"
+  longitude="{{longitude}}"
+  markers="{{markers}}"
+  show-location
+  bindregionchange='change'
+  bindmarkertap="makertap"
+  bindtap="cancel"
+  >
+  </map> 
+<cover-image  class='initial' catchtap='moveToLocation' src="../../img/initial.png" />
+<cover-image  class='center' catchtap='center' src="../../img/center.png" />  
+<cover-image  class='we' bindtap='we' src="../../img/we.png" />   
+<cover-image  class='phone' catchtap='phone' src="../../img/phone.png"/>  
+<!-- <cover-view class="upgrade" catchtap='vip' id='{{catalog}}'>
+  <cover-image  class='upgradeImg' src="../../img/upgrade.png"/>  
+  <cover-view class="text">{{catalog!=1?"升级":"购买"}}</cover-view>
+</cover-view> -->
+<cover-view class='card' id='{{catalog}}' catchtap='card'>会员卡</cover-view>
+<cover-view class='activity' catchtap='activity' wx:if="{{activity}}">
+  <cover-image src='{{activityData.logo}}' style='width:680rpx;height:180rpx;'></cover-image>
+  <cover-view class='shadow'>
+    <cover-view class='title'>{{activityData.name}}</cover-view>
+    <cover-view class='introduce'>{{activityData.summary}}</cover-view>
+  </cover-view>
+</cover-view>
+<cover-view class='vip' wx:if="{{vip}}" style='color:{{bjColor=="b4"?"#fff":""}}'>
+  <cover-image class='vipCard' src='{{VipBj}}'></cover-image>  
+  <cover-image class='vipCode' src='{{vips.src}}'></cover-image>  
+  <!-- <cover-view class='vipName'>{{name}}</cover-view> -->
+  <cover-view class='vipJob'>{{job}}</cover-view>
+  <cover-view class='vipCompanyJob'>{{socialJob}}</cover-view>
+  <cover-view class='vipCompany'>{{companyName}}</cover-view>
+</cover-view>
+<cover-view class='store' wx:if="{{store.flag}}" catchtap='store'>
+  <cover-image src='{{store.logo}}' class='store-bj'></cover-image>
+  <cover-view class='title'>{{store.title}}</cover-view>
+  <cover-view class='money'>人均￥{{store.money}}</cover-view>
+  <cover-view class='introduce'>{{store.introduce}}</cover-view>
+  <cover-view class='reservation' catchtap='about'>预约</cover-view>
+  <cover-image class='navigation' src='../../img/navigation.png' catchtap='map'></cover-image>
+</cover-view>

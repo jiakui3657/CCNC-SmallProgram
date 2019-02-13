@@ -1,0 +1,12 @@
+<view class="container">
+  <view class='todo'>
+    <view id="{{item.id}}" class='list clearfix' wx:for="{{list}}" wx:key="unique" bindtap='navigation'>
+      <image src='{{item.logo}}'></image>
+      <view class='basis'>
+        <view class='name'>{{item.name}}</view>
+        <view>{{item.phone}}</view>
+        <view>{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+/* pages/we/trip/trip.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.container{
+  padding: 0 25rpx;
+  text-align: left;
+  padding-bottom: 25rpx;
+}
+.container .list{
+  width: 100%;
+  height: 225rpx;
+  background-color: #fff;
+  margin-top: 30rpx;
+  padding: 0 35rpx;
+  box-sizing: border-box;
+}
+.name{
+  height: 128rpx;
+  line-height: 128rpx;
+  color: #333;
+  font-size: 32rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content:space-between;
+}
+.time{
+  height: 98rpx;
+  line-height: 98rpx;
+  color: #999;
+  border-top:1rpx solid #ddd;
+  font-size: 24rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content:space-between;  
+}
+.title{
+  font-weight: 600;
+}
+.state{
+  width: auto;
+  height: auto;
+  margin: 0;
+}

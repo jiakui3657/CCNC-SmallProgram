@@ -1,0 +1,16 @@
+/* pages/we/time/time.wxss */
+.container{
+  padding: 30rpx 46rpx;
+}
+.list{
+  height: 140rpx;
+  line-height: 140rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  color: #333;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+  text-align: center;
+}
+text{
+  font-size: 28rpx;
+}

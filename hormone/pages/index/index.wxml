@@ -1,0 +1,61 @@
+<map
+  id="myMap"
+  scale='{{scale}}'
+  latitude="{{latitude}}"
+  longitude="{{longitude}}"
+  markers="{{markers}}"
+  show-location="true"
+  bindregionchange="change"
+  bindmarkertap="makertap"
+  bindtap="cancel"
+  >
+  </map> 
+<cover-image  class='initial' catchtap='moveToLocation' src="../../img/initial.png" />
+<cover-image  class='center' catchtap='center' src="../../img/center.png" />  
+<cover-image  class='we' bindtap='we' src="../../img/we.png" />   
+<cover-image  class='phone' catchtap='phone' src="../../img/phone.png"/>  
+<cover-view class="upgrade" catchtap='vip'>
+  <cover-image  class='upgradeImg' src="../../img/list.png"/>  
+  <cover-view class="text">列表</cover-view>
+</cover-view>
+<cover-view class='card'  >
+  <cover-view catchtap='sweep'>
+    <cover-image src="../../img/scan.png" style='margin-left:36rpx;'/> 
+  </cover-view>
+  <cover-view id='{{catalog}}' catchtap='card' style='width:130rpx;'>特权卡</cover-view>
+  <cover-view catchtap='sweep'>
+    <cover-image src="../../img/scan.png" style='margin-right:36rpx;'/> 
+  </cover-view>
+</cover-view>
+<cover-view class='activity' catchtap='activity' wx:if="{{activity&&activityData.length!=0}}">
+  <cover-image src='{{activityData.logo}}' style=''></cover-image>
+  <cover-view class='shadow' wx:if="{{activity}}">
+    <cover-view class='title'>{{activityData.name}}</cover-view>
+    <cover-view class='introduce'>{{activityData.summary}}</cover-view>
+    <cover-view class='money'>{{activityData.vip}}<cover-view>￥</cover-view></cover-view>
+    <cover-view class='box'>
+      <cover-view class='name'>{{activityData.venue}}</cover-view>  
+      <cover-view class='points'></cover-view>
+      <cover-view class='time'>{{activityData.endDate}}</cover-view>
+    </cover-view>
+  </cover-view>
+</cover-view>
+<cover-view class='vip' wx:if="{{vip}}">
+  <cover-image class='vipCard' src='../../img/vb.png'></cover-image>
+  <cover-image class='vipCode' src='{{vips.src}}'></cover-image>  
+  <!-- <cover-image class='hmlogo' src='../../img/hmlogo.png'></cover-image>     -->
+  <cover-image class='photo' src='{{photo}}'></cover-image> 
+  <cover-view class='vipName'>{{name}}</cover-view>
+  <cover-view class='hmlogo'>{{time}}</cover-view>
+  <cover-view class='endTime'>{{vipTimeEnd}} 到期</cover-view>
+</cover-view>
+<cover-view class='store' wx:if="{{store.flag}}" catchtap='store'>
+  <cover-image src='{{store.logo}}' class='store-bj'></cover-image>
+  <!-- <cover-view class='money'>人均￥{{store.money}}</cover-view> -->
+  <cover-view class='shadow'>
+    <cover-view class='title'>{{store.title}}</cover-view>    
+    <cover-view class='introduce' wx:if="{{store.summary!=''}}">会员特权：{{store.summary}}</cover-view>
+    <cover-view class='reservation' catchtap='about'>预约</cover-view>
+    <cover-image class='navigation' src='../../img/navigation.png' catchtap='map'></cover-image>
+  </cover-view>
+</cover-view>

@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "圈子",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "window": {
+    "enablePullDownRefresh": true
+  },
+  "usingComponents": {
+    "activity": "/pages/components/activity/activity",
+    "mood": "/pages/components/mood/mood"
+  }
+}

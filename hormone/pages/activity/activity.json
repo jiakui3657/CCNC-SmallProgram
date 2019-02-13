@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+   "navigationBarTitleText": "活动",
+  "backgroundTextStyle": "dark",
+  "window": {
+    "enablePullDownRefresh": false
+  }
+}

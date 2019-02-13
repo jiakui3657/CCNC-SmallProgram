@@ -1,0 +1,59 @@
+<!--pages/index/industry/industry.wxml-->
+<view class="main">
+  <view class='head clear'>
+    <view class='list'>工程清单</view>
+    <view class='img'>
+      <image src="../../images/upload.png"/>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='pay clear'>
+      <view class='payc clear'>付款方式</view>
+      <view class='llist'>
+          <view class='{{payl}}'>
+            <block wx:for="{{paylist}}">
+              <view bindtap='pd' id='{{index}}' class="{{cl}}" style='{{key==index?"color:#f00;":""}}'>{{item.name}}</view>
+            </block>
+          </view>
+          <view bindtap='{{pays}}' class='pays'>其他支付方式∨</view>
+      </view>
+    </view>
+    <view class='time clear'>
+      <view class='tt'>竞标时长</view>
+      <view class='jtime'>
+        <block wx:for="{{time}}">
+          <view class='{{tview}}' bindtap='tt' style='{{val==index?"background:#f33;":""}}' id='{{index}}'>{{item.t}}</view>
+        </block>
+      </view>
+    </view>
+    <view class='miao clear'>
+      <view class='tts'>用苗时间</view>
+      <view class='jtime'>
+        <block wx:for="{{time2}}">
+          <view class='{{tview2}}' bindtap='ts' style='{{v==index?"background:#f33;":""}}' id='{{index}}'>{{item.t}}</view>
+        </block>
+      </view>
+    </view>
+    <view class='addr clear'>
+      <view class='ad'>用苗地点</view>
+      <input type="text"/>
+    </view>
+    <view class='btn clear'>
+      <button>提交</button>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+  <view catchtap='industry'>
+    <image src='../../images/20180518151844.png'></image>
+    <text>竞标</text>
+  </view>
+  <view catchtap='results'>
+    <image src='../../images/20180518151909.png'></image>
+    <text>竞标结果</text>
+  </view>
+  <view catchtap='contract'>
+    <image src='../../images/20180518151921.png'></image>
+    <text>已签合同</text>
+  </view>
+</view>

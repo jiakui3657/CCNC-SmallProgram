@@ -1,0 +1,189 @@
+/* pages/contactDetails/contactDetails.wxss */
+page{
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.container{
+  height: 100%;
+}
+.information{
+  /* height: 990rpx; */
+  width: 670rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: -2rpx 0 10rpx #eee,0 -2rpx 10px #eee,0 2rpx 10rpx #eee,2rpx 0 10rpx #eee;
+  margin: 0 auto;
+  padding: 56rpx 60rpx;
+  box-sizing: border-box;
+  color: #666;
+  position: relative;
+}
+.personal{
+  padding-bottom: 45rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.code{
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  overflow: hidden;
+}
+.code image {
+  width:180px;
+  height:180px;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+.code .create {
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  background: #5996e1;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 32rpx;
+  position: relative;
+}
+.code .create button {
+  position:absolute;
+  left:0rpx;
+  top:0rpx;
+  width:280rpx;
+  height:80rpx;
+  opacity:0;
+}
+.flicking{
+  position: absolute;
+  bottom: -49rpx;
+  right: 36rpx;
+  width: 98rpx;
+  height: 98rpx;
+}
+.information .company{
+  font-size: 32rpx;
+  color: #999
+}
+.information .name{
+  color: #666;
+  font-size: 48rpx;
+  margin-top: 50rpx;
+  font-weight:600;
+}
+.information .status{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  color: #666;
+}
+.information .phone{
+  font-size: 30rpx;
+  margin-top: 20rpx;  
+  color: #999;
+  position: relative;
+}
+.information .phone image{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+}
+.information .note{
+  color: #7a93b2;
+  font-size: 28rpx;
+  margin-top: 40rpx;
+  display: flex;
+}
+.information .note image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 42rpx;
+  margin-top: 5rpx;
+}
+.tab{
+  height: 175rpx;
+  line-height: 175rpx;
+  width: 670rpx;
+  margin: 0rpx auto;
+  text-align: center;
+  color: #999;
+  font-size: 26rpx;
+}
+.tab image{
+  width:28rpx;
+  height:28rpx;
+  margin-right:15rpx;
+  vertical-align:middle;
+  margin-top:-6rpx;
+}
+/* 模态框 */
+.modal{
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+.modal .box{
+  width: 670rpx;
+  height: 470rpx;
+  padding: 60rpx 60rpx 76rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius:15rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -235rpx;
+  margin-left: -335rpx;
+  transition: all .5s;  
+  overflow: hidden;
+}
+.modal .box .title{
+  color: #666;
+  text-align: center;
+  font-size: 32rpx;
+}
+.modal .box .main{
+  width: 548rpx;
+  height: 94rpx;
+  border: 1rpx solid #d2d2d2;
+  margin-top: 58rpx;
+  box-sizing: border-box;
+  line-height: 94rpx;
+  display: flex;
+}
+.modal .box .main text{
+  font-size: 30rpx;
+  width: 156rpx;
+  text-align: center;
+  color: #999;
+}
+.modal .box .main input{
+  font-size: 30rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  color: #333;
+}
+.modal .box .state{
+  margin-top: 72rpx;
+  font-size: 30rpx;
+  
+}
+.modal .box .state text{
+  width: 248rpx;
+  height: 78rpx;
+  display: inline-block;
+  line-height: 78rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: #eee;
+  color: #999;
+}
+/* .modal .active{
+  margin-top: -500rpx;
+  transition: all .5s;
+} */

@@ -1,0 +1,249 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+map{
+  width: 100%; 
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 1;
+}
+.center{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -23rpx;
+  margin-top: -36rpx;
+  height: 72rpx;
+  width: 46rpx;
+  z-index:111;
+}
+.we{
+  position: fixed;
+  bottom: 200rpx;
+  left: 0rpx;
+  height: 100rpx;
+  width: 145rpx;
+  z-index:111;
+}
+.initial{
+  position: fixed;
+  bottom: 62rpx;
+  left: 45rpx;
+  width: 100rpx;
+  height: 100rpx;
+  z-index: 1111;
+}
+.upgrade{
+  position: fixed;
+  bottom: 160rpx;
+  right: 45rpx;
+  z-index: 1111;
+  text-align: center;
+}
+.upgrade .upgradeImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  z-index: 1111;
+}
+.upgrade .text {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.phone{
+  position: fixed;
+  bottom: 62rpx;
+  right: 45rpx;
+  width: 100rpx;
+  height: 100rpx;
+  z-index: 1111;
+}
+.card{
+  position: fixed;
+  bottom: 72rpx;
+  left: 0%;
+  right: 0%;
+  width: 280rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #9e108c;
+  z-index: 111;
+   margin: 0 auto; 
+  font-size: 36rpx;
+  box-shadow: -2rpx 0 15rpx #808080,0 -2rpx 15px #808080,0 2rpx 15rpx #808080,2rpx 0 15rpx #808080;
+}
+.activity{
+  position: absolute;
+  top: 35rpx;
+  left: 0rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  width: 680rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+  z-index: 111;
+  box-shadow: -2rpx 0 15rpx #808080,0 -2rpx 15px #808080,0 2rpx 15rpx #808080,2rpx 0 15rpx #808080;
+}
+.activity .title{
+  position: absolute;
+  top: 35rpx;
+  left: 0rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  z-index: 1111;
+  width: 100%;
+}
+.activity .introduce{
+  position: absolute;
+  top: 100rpx;
+  left: 0rpx;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+}
+.activity .shadow{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  width: 680rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+  background-color: rgba(0,0,0,.5)
+}
+.vip{
+  position: absolute;
+  top: 40rpx;
+  left: 0rpx;
+  right: 0rpx;
+  color: #fff;
+  font-size: 36rpx;
+  z-index: 1111;
+  width: 680rpx;
+  height: 430rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.vip .vipCard{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 1111;
+  width: 680rpx;
+  height: 430rpx;
+  border-radius: 20rpx;
+}
+.vip .vipCode{
+  position:absolute;
+  top:76rpx;
+  right:66rpx;
+  z-index:11111;
+  width:240rpx;
+  height:240rpx;
+}
+.vip .vipName{
+  position:absolute;
+  top:165rpx;
+  left:115rpx;
+  z-index:11111;
+  font-size:42rpx;
+}
+.store{
+  position: absolute;
+  top: 35rpx;
+  left: 0rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  color: #fff;
+  z-index: 1111;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  width: 680rpx;
+  height: 320rpx;
+  text-align: left;
+}
+.store .store-bj{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+.store .title{
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+  color: #fff;
+  font-size: 36rpx;
+  z-index: 1111;
+  width: 400rpx;
+  overflow:hidden;
+  word-break:keep-all;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.store .money{
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  color: #fff;
+  z-index: 1111;
+  font-size: 32rpx;
+}
+.store .introduce{
+  position: absolute;
+  top: 100rpx;
+  left: 40rpx;
+  color: #fff;
+  width: 100%;
+  font-size: 28rpx;
+}
+.store .reservation{
+  position: absolute;
+  bottom: 40rpx;
+  right: 156rpx;
+  color: #fff;
+  width: 130rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+  text-align: center;
+  font-size: 28rpx;
+  background-color: #9f108c;
+  border-radius: 32rpx;
+}
+.store .navigation{
+  position: absolute;
+  bottom: 25rpx;
+  right: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  z-index: 1111;
+}
+.personal{
+  position: fixed;
+  left: 0rpx;
+  top: 0rpx;
+  height: 100%;
+  width: 66.6%;
+  background-color: #fff;
+  z-index: 11111;  
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  background-color: rgba(255,255,255,1); 
+  z-index: 111111111;
+}

@@ -1,0 +1,33 @@
+<view class="container">
+  <textarea show-confirm-bar='' placeholder-style='font-size:30rpx;color:#ccc;' placeholder="请输入详细的活动内容" focus='{{focus}}'  bindinput='moodTextarea' value='{{activity}}' maxlength='-1' />
+  <view class='imgs'>
+    <view class='file' wx:key="unique" wx:for="{{array}}">
+      <image src='{{item}}' mode="aspectFill"></image>
+      <image class='icon' src='../../images/delete.png' bindtap='delete' id="{{index}}"></image>
+      <!-- <view class='icon iconfont icon-delete' bindtap='delete' id="{{index}}"></view> -->
+    </view>
+    <view class='file last' bindtap='add' wx:if="{{array.length<9}}">
+      <image src='../../images/file.jpg'></image>
+    </view>
+  </view>
+  <view class='list' catchtap='map'>
+    <text class='name'>活动地址</text>
+    <text class='title map_container'>{{place==""?"点击地图选择":place}}</text>
+  </view>
+  <view class='list'>
+    <view bindtap="date">
+      <text class='name'>活动时间</text>  
+      <text class='title active' >{{time==""?"请选择日期":time}}</text> 
+    </view>
+  </view>
+   <view class='list'>
+    <text class='name'>参与人数</text>
+    <input type="number" placeholder="选填" placeholder-class='active' bindinput='num'></input>
+  </view> 
+  <view class='list'>
+    <text class='name'>报名费用</text>
+    <input type="number" placeholder="请输入报名费用" placeholder-class='active' bindinput='money'></input> 
+  </view> 
+</view>
+<button class='release' bindtap='launchEvent' disabled='{{disabled}}'>发布活动</button>
+<include src="../../components/picker/picker.wxml"/>

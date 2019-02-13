@@ -1,0 +1,67 @@
+/* pages/information/information.wxss */
+page{
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.container{
+  height: 100%;
+}
+.information{
+  height: 630rpx;
+  width: 670rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: -2rpx 0 10rpx #eee,0 -2rpx 10px #eee,0 2rpx 10rpx #eee,2rpx 0 10rpx #eee;
+  margin: 0 auto;
+  padding: 55rpx 60rpx 0rpx 60rpx;
+  box-sizing: border-box;
+  color: #666;
+  overflow: hidden;
+}
+.personal{
+  padding-bottom: 84rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.information .company{
+  font-size: 32rpx;
+  color: #999;
+}
+.information .name{
+  color: #666;
+  font-size: 48rpx;
+  margin-top: 68rpx;
+  font-weight: 600;
+}
+.information .status{
+  font-size: 28rpx;
+  margin-top: 26rpx;
+  color: #666;
+}
+.information .phone{
+  font-size: 30rpx;
+  margin-top: 26rpx;  
+  color: #999;
+}
+.note{
+  height: 188rpx;
+  line-height: 188rpx;
+  color: #7a93b2;
+  font-size: 30rpx;
+  display: flex;
+}
+.note input{
+  margin-top:70rpx;
+  font-size: 32rpx;
+  color: #999;
+}
+button{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #5996e1;
+  width: 670rpx;
+  border-radius: 10rpx;
+  margin: 50rpx auto;
+}

@@ -1,0 +1,20 @@
+<!--pages/we/wallet/wallet.wxml-->
+<view class='container'>
+  <view class='header'>
+    <text class='balance'>我的余额</text>
+    <view>
+      <text class='number'>{{money}}</text>
+      <text class='add' catchtap='withdrawal'>提现</text>
+    </view>
+  </view>
+  <view class='list' wx:key="unique" wx:for="{{list}}">
+    <view>
+      <text class='behavior'>{{item.note}}</text>
+      <text class='num' style='color:{{item.money<=0?"#666":""}}'>{{item.money<0?"":"+"}}{{item.money}}</text>
+    </view>
+    <!-- <view>
+      <text class='way'>{{item.note}}</text>
+      <text class='time'>{{item.date}}</text>
+    </view> -->
+  </view>
+</view>

@@ -1,0 +1,11 @@
+/* pages/message/message.wxss */
+.container{
+  padding: 15rpx 60rpx;
+}
+.list{
+  padding: 35rpx 0;
+  font-size: 30rpx;
+  color: #a7a7a7;
+  border-bottom: 1rpx solid #ddd;
+  width:100%;
+}

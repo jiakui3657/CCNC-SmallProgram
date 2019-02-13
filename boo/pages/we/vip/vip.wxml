@@ -1,0 +1,6 @@
+<!--pages/we/vip/vip.wxml-->
+<view class='header' catchtap='ability'>会员权益</view>
+<view class='container'>
+  <image wx:for="{{list}}" src="{{item.logo}}"></image>
+</view>
+<button catchtap='phone'>{{text}}</button>

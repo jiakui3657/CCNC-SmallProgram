@@ -1,0 +1,26 @@
+<!--pages/entrance/entrance.wxml-->
+<view class='container'>
+  <view class='header'>
+    <view>特权人姓名：{{res.name}}</view>
+    <view class='level'>特权人级别：{{res.catalog}}</view>
+  </view>
+  <view class='center'>
+    <view class='list' wx:for="{{list}}" id='{{item.id}}' data-index='{{index}}' catchtap='selected'>
+      <view class='company'>
+        <text class='name'>{{item.name}}</text>
+        <text>{{item.companyName}}{{item.job}}</text>
+        <!-- <text class='vip'>vip ￥{{item}}</text> -->
+      </view>
+      <view class='phone'>
+        <text>电话：{{item.phone}}</text>
+      </view>
+      <view class='time'>入场时间：{{item.date}}</view>
+      <image src='{{!item.state?"../image/uncheck.png":"../image/selected.png"}}'></image>
+    </view>
+    <view class='total'>
+      <view>共有{{res.size}}张优惠券</view>
+      <view>已选中<text> {{num}} </text>张</view>
+    </view>
+  </view>
+  <button catchtap='entrance'>确认入场</button>
+</view>

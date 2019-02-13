@@ -1,0 +1,154 @@
+/* pages/index/industry/industry.wxss */
+.main{
+  font-size: 32rpx;
+}
+.clear:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.head{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.head>view{
+  float: left;
+}
+.list{
+  line-height: 150rpx;
+  margin-right: 20rpx;
+}
+.img{
+  width: 150rpx;
+  height: 150rpx;
+}
+.img>image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.plist{
+  height:184rpx;
+  overflow: hidden;
+}
+.plist2{
+}
+.plist>view{
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 28rpx;
+}
+.plist2>view{
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 28rpx;
+  margin-left: 160rpx;
+}
+.pay>view{
+  padding: 20rpx;
+}
+.payc{
+  margin-right: 15rpx;
+  float: left;
+  color: #f00;
+}
+.pays{
+  text-align: center;
+  font-size: 26rpx;
+  color: #666;
+}
+.time{
+  padding: 20rpx;
+  margin-top: 30rpx;
+}
+.miao{
+  padding: 20rpx;
+  margin-top: 30rpx;
+}
+.tview{
+  background: #666;
+  border-radius: 16rpx;
+  padding: 4rpx 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+  float: left;
+  margin-right: 15rpx;
+}
+.tt{
+  color:skyblue;
+  float: left;
+  margin-right: 20rpx;
+}
+.tts{
+  color:#f33;
+  float: left;
+  margin-right: 20rpx;
+}
+.tview:first-child{
+  background: #f33;
+}
+.tview2{
+  background: #666;
+  border-radius: 16rpx;
+  padding: 4rpx 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+  float: left;
+  margin-right: 15rpx;
+}
+.addr{
+  padding: 20rpx;
+  margin-top: 30rpx;
+}
+.ad{
+  color: skyblue;
+  margin-right: 20rpx;
+  float: left;
+  line-height: 52rpx;
+}
+.addr>input{
+  border: 1rpx solid #ddd;
+
+}
+.btn{
+  margin-top: 100rpx;
+}
+.btn button{
+  width: 300rpx;
+  text-align: center;
+  background: #f33;
+  color: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+/* 底部 */
+.footer{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer view{
+  height: 98rpx;
+  background-color: #ccc;
+  width: 33.333%;
+  color:#333;
+  text-align: center;
+}
+.footer view image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+.footer view text{
+   /* margin-top: 15rpx;  */
+  display: block;
+  font-size: 30rpx;
+  color: #333;
+  text-align: center;
+}

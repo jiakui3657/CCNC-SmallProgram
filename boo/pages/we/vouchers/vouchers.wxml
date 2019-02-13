@@ -1,0 +1,16 @@
+<!--pages/we/vouchers/vouchers.wxml-->
+<view class='container'>
+  <view class='list' wx:for="{{list}}" style='background:{{item.state==1?"linear-gradient(to right, #b30d66, #98119a)":"linear-gradient(to right, #fff, #fff)"}};color:{{item.state==1?"#fff":"#aaa"}}'>
+    <view class='title'>
+      <text>{{item.name}}</text>
+      <text>￥{{item.money}}</text>
+    </view>
+    <view class='time'>{{item.begin}} 至 {{item.end}}</view>
+    <view class='address'>{{item.address}}</view>
+    <image src='../../img/overdue.png' wx:if="{{item.state==3}}"></image>
+    <image src='../../img/use.png' wx:elif="{{item.state==2}}"></image> 
+    <image wx:else></image> 
+    <text class='left'></text>
+    <text class='right'></text>
+  </view>
+</view>

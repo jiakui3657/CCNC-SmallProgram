@@ -1,0 +1,84 @@
+<!--pages/index/activityDetails/activityDetails.wxml-->
+<view class='container' catchtap='cancel'>
+  <view class='about activity' id="{{list.id}}">
+    <view class='on'>
+      <image class='portrait' src='{{list.member.avatar}}'></image>
+      <view class='area'>
+        <view class='information'>
+          <text class='name'>{{list.member.name}}</text> -  
+          <text class='position'> {{list.member.job}}</text>
+          <text class='position' style='display:inline-block;padding:0rpx 10rpx;padding-bottom:3rpx;background-color:#b21e23;color:#fff;margin-left:10rpx;font-size:24rpx;border-radius:20rpx;' wx:if="{{list.member.catalog!='会员'}}">{{list.member.catalog}}</text>
+          <!-- <view class='company' catchtap='share'>{{list.date}}</view> -->
+        </view>
+        <view class='companys'>{{list.member.companyName}}</view>
+        <text class='title' decode='true' space='true' style='margin-bottom:{{list.images!=null?"25rpx":"0rpx"}}'>{{list.note}}</text>
+        <view class='moodImg'>
+          <image wx:key="unique" mode="aspectFill" wx:for="{{list.images}}" wx:for-item="it" data-list="{{list.images}}"  src='{{it.url}}' data-src="{{it.url}}" catchtap='preview'></image>
+        </view>
+      </view> 
+    </view>
+    <view class='under clearfix' catchtap='open' data-longitude="{{list.lng}}" data-latitude="{{list.lat}}">
+      <view class='positioning' bindtap='map'>
+          <image src='../../images/location.png'></image>             
+          <text>{{list.address}}</text>
+      </view> 
+    </view>
+  </view> 
+  <view class='tab'>
+    <view>
+      <text class='{{flag==0?"active":""}}' wx:if="{{list.haveRedPacket==1}}" catchtap='tab1'>抢红包{{wallet.total}}</text>
+    </view>
+    <view style='width:{{list.haveRedPacket==1?"":"50%"}}'>
+      <text class='{{flag==1?"active":""}}' catchtap='tab2'>评论{{comments.total}}</text>
+    </view>
+    <view style='width:{{list.haveRedPacket==1?"":"50%"}}'>
+      <text class='{{flag==2?"active":""}}' catchtap='tab3'>点赞{{praise.total}}</text></view>
+    </view>
+  <scroll-view scroll-y scroll-top class='content {{flag==0?"show":"hide"}}' wx:if="{{list.haveRedPacket==1}}">
+    <view class='title' wx:if="{{opend}}">恭喜您，您抢到{{list.money}}元</view>
+    <view class='title' wx:elif="{{list.money==0}}">您好，快来抢红包吧</view>    
+    <view class='title' wx:else>您来晚了，红包已经抢完了</view>        
+    <view class='total'>
+      <text style='color:#999'>红包金额：</text>
+      <text style='color:#e95443'>¥{{wallet.data.openMoney}}</text>
+      <text style='color:#666'>/¥{{wallet.data.money}}</text>
+      <text style='float:right;color:#333'>/{{wallet.data.num}}</text>
+      <text style='float:right;color:#999'>{{wallet.data.total}}</text>
+    </view>
+    <view class='list wallet' wx:key="unique" wx:for="{{wallet.data.list}}">
+      <image src='{{item.member.avatar}}' catchtap='details' data-name='{{item.member.name}}' data-iid='{{item.member.id}}'></image>
+      <view class='text'>
+        <view class='contentName'>{{item.member.name}}</view>
+        <view>{{item.date}}</view>
+        <view class='num'>￥{{item.money}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view scroll-y scroll-top class='content {{flag==1?"show":"hide"}}'>
+    <view class='list' wx:key="unique" wx:for="{{comments.list}}">
+      <image src='{{item.member.avatar}}' catchtap='details' data-name='{{item.member.name}}' data-iid='{{item.member.id}}'></image>
+      <view class='text'>
+        <view class='contentName'>{{item.member.name}}</view>
+        <view>{{item.note}}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view scroll-y scroll-top class='content {{flag==2?"show":"hide"}}'>
+    <view class='list' wx:key="unique" wx:for="{{praise.list}}">
+      <image src='{{item.member.avatar}}' catchtap='details' data-name='{{item.member.name}}' data-iid='{{item.member.id}}'></image>
+      <view class='text'>
+        <view class='contentName'>{{item.member.name}}</view>
+        <view>{{item.date}}赞了你</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view  class='navigation'>
+    <view class='{{opend?"Active":"navigationActive"}}' wx:if="{{list.haveRedPacket==1}}" catchtap='signUp'>{{opend?"已领取":"抢红包"}}</view>
+    <view catchtap='comment' style='width:{{list.haveRedPacket==0?"50%":""}}'><image src='../../images/commentsImg.png' ></image>评论</view>
+    <view catchtap='addPraise' data-isActive="{{liked}}" style='width:{{list.haveRedPacket==0?"50%":""}}'><image src='{{liked?"../../images/yespraiseImg.png":"../../images/nopraiseImg.png"}}' style='animation:{{click&&liked?"myfirst .3s":""}}'></image>{{liked?"已点赞":"点赞"}}</view>
+  </view>
+  <view class='comments' catchtap='return false' wx:if="{{switch}}">
+    <textarea show-confirm-bar='' auto-focus focus="true" placeholder='写评论...' placeholder-style='color:#ccc;font-size:30rpx'  bindinput='text' maxlength='-1' fixed="true" auto-height="true"/> 
+    <button catchtap='send' disabled='{{disabled}}'>发送</button>
+  </view>
+</view>

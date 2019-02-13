@@ -1,0 +1,2 @@
+<!--pages/index/vipIntroduction/vipIntroduction.wxml-->
+<web-view src="{{url}}"></web-view>

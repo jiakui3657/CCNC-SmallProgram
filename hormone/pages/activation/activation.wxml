@@ -1,0 +1,35 @@
+<!--pages/activity/activity.wxml-->
+<view class='list' wx:for="{{list}}" data-name='{{item.name}}' data-id='{{item.id}}' data-lng='{{item.lng}}' data-lat='{{item.lat}}' catchtap='store'>
+  <image src='{{item.logo}}' mode="widthFix" class='bj'></image>
+  <view class='shadow'>
+    <view class='title'>{{item.name}}</view>
+    <view class='vip'>会员特权：{{item.summary}}</view>
+    <view class='distance'>{{item.distance}}</view>
+    <view class='booking' data-phone='{{item.phone}}' catchtap='about'>预约</view>
+    <image src='../../img/navigation.png' data-name='{{item.name}}' data-lng='{{item.lng}}' data-lat='{{item.lat}}' class='navigation' catchtap='map'></image>
+  </view>
+</view>
+<view class='card' >
+  <view><image src="../../img/scan.png" catchtap='sweep' style='margin-left:36rpx;'></image></view>
+  <view catchtap='card' style='width:140rpx;'>特权卡</view>
+  <view><image src="../../img/scan.png" catchtap='sweep' style='margin-right:36rpx;'></image></view>
+</view>
+<view class="upgrade" catchtap='vip'>
+  <image  class='upgradeImg' src="../../img/upgrade.png"/>  
+  <view class="text">地图</view>
+</view>
+<image  class='we' bindtap='we' src="../../img/we.png" />   
+<image  class='phone' catchtap='phone' src="../../img/phone.png"/>  
+<image  class='initial' catchtap='moveToLocation' src="../../img/initial.png" />
+<view class='card1' wx:if='{{flag}}'>
+  <image class='vipCard' src='../../img/vb.png'></image>
+  <image src='{{src}}' class='vipCode'></image>
+  <image src='{{avatar}}' class='phone'></image>
+  <view class='vipName'>{{name}}</view>
+  <view class='time'>{{time}}</view>
+  <view class='endTime'>{{vipTimeEnd}}</view>
+</view>
+<view class='mask'>
+  <view class='two'></view>
+  <view class='one'></view>
+</view>

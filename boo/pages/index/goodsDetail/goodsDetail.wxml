@@ -1,0 +1,6 @@
+<!-- <view class='imgview'>
+  <block wx:for="{{imgList}}">
+    <image src='{{item.src}}' mode='aspectFill'></image>
+  </block>
+</view>  -->
+<web-view src="{{url}}"></web-view>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/today/today",
+    "pages/history/history",
+    "pages/activity/activity",
+    "pages/activityDetails/activityDetails",
+    "pages/financial/financial",
+    "pages/addActivity/addActivity",
+    "pages/binding/binding",
+    "pages/store/store",
+    "pages/withdrawal/withdrawal",
+    "pages/entrance/entrance"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#323232",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff"
+  }
+}

@@ -1,0 +1,9 @@
+<!--pages/we/addRecord/addRecord.wxml-->
+<view class='map_container'>
+  <view class='add' catchtap='{{list.length<end?"add":"cancel"}}'>添加成员</view>
+  <view class='num'>{{start}}/{{end}}</view>
+  <view class='list' wx:key="unique" wx:for="{{list}}">
+    <view><text class='name'>{{item.name}}</text><text class='westate'>{{item.state}}</text></view>
+    <view><text class='position'>{{item.job}}</text><text class='time'>{{item.date}}</text></view>
+  </view>
+</view>

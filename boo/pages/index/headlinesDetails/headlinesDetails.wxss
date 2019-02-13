@@ -1,0 +1,4 @@
+/* pages/index/headlinesDetails/headlinesDetails.wxss */
+web-view{
+  font-size: 14rpx;
+}

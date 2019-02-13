@@ -1,0 +1,62 @@
+page {
+  background-color: rgb(236, 224, 224);
+  font-size: 28rpx;
+  
+}
+
+.orderView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 300rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 30rpx;
+  margin: 30rpx auto;
+}
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+}
+
+.row text {
+  display: inline-block;
+  width: 130rpx;
+  margin-right: 30rpx;
+  color: rgb(193, 196, 181);
+}
+
+.row view {
+  color: #000;
+}
+
+.listView {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  padding-bottom: 10rpx;
+  display: inline-flex;
+}
+
+.noorder {
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 45rpx;
+}
+
+.danjiaV {
+  position: absolute;
+  right: 110rpx;
+  color: #000;
+}

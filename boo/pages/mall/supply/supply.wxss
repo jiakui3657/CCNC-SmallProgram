@@ -1,0 +1,317 @@
+/* pages/mall/supply/supply.wxss */
+.message {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  background-color: #b21e23;
+  padding: 10rpx 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.message image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.message text {
+  line-height: 40rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.swiper {
+  position: relative;
+  box-sizing: border-box;
+  height: 270rpx;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+}
+
+.swiper image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 270rpx;
+  margin-top: 0rpx;
+}
+
+.content {
+  width: 100%;
+  height: 805rpx;
+  display: inline-flex;
+}
+
+.scrollMiddle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 20%;
+  font-size: 30rpx;
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.navigation-item {
+  height: 110rpx;
+  line-height: 109rpx;
+  text-align: center;
+}
+
+.currentTab {
+  background-color: #fff;
+  color: #f00;
+}
+
+.right {
+  width: 80%;
+  padding-top: 20rpx;
+  background-color: #fff;
+}
+
+.viewclass {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 35rpx;
+}
+
+.type {
+  display: block;
+  margin-top: 37rpx;
+  margin-bottom: 30rpx;
+  width: 100%;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.goods-item {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  padding: 30rpx 20rpx 30rpx;
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.goods-left {
+  margin-left: 20rpx;
+  width: 185rpx;
+  height: 185rpx;
+}
+
+.goods-right {
+  text-align: left;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 47rpx;
+}
+
+.goods-name {
+  max-inline-size: 260rpx;
+  font-size: 30rpx;
+  margin-bottom: 7rpx;
+}
+
+.oldprice {
+  color: #b6b3b3;
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  text-decoration: line-through;
+}
+
+.goods-size {
+  font-size: 31rpx;
+  margin-bottom: 20rpx;
+}
+
+.goods-right-bottom {
+  margin-top: 8rpx;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.goods-right-bottom text {
+  color: #000;
+  font-size: 29rpx;
+}
+
+.addView {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: rgb(230, 183, 97);
+  position: absolute;
+  right: 20rpx;
+}
+
+.addNumView {
+  position: relative;
+  color: #fff;
+  font-size: 17rpx;
+  top: -66rpx;
+  left: 42rpx;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30rpx;
+  background-color: #b21e23;
+}
+
+.viewShdow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 101;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.918);
+}
+
+.shopcartView {
+  position: fixed;
+  bottom: 100rpx;
+  width: 100%;
+  z-index: 102;
+}
+
+.deleteView {
+  background-color: rgb(214, 214, 214);
+  width: 100%;
+  height: 30px;
+}
+
+.deleteViewrig {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 185rpx;
+  position: absolute;
+  right: 10px;
+  top: 2.5px;
+}
+
+.deleteViewrig image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.deleteView text {
+  font-size: 27rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.orderItem {
+  font-size: 30rpx;
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  border-top: 1px solid rgb(214, 214, 214);
+}
+
+.orderItem-name {
+  margin-left: 20rpx;
+  display: block;
+  max-inline-size: 305rpx;
+}
+
+.orderItem-price {
+  position: absolute;
+  right: 275rpx;
+}
+
+.jsView {
+  font-size: 35rpx;
+  width: 185rpx;
+  position: absolute;
+  right: 20rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jsView view {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: rgb(230, 183, 97);
+}
+
+.bttn {
+  width: 100%;
+  height: 100%;
+}
+
+.button-hover {
+  color: rgb(206, 189, 189);
+}
+
+.shopcart {
+  position: fixed;
+  left: 40rpx;
+  bottom: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: rgb(230, 183, 97);
+}
+
+.nav-bottom image {
+  position: fixed;
+  left: 40rpx;
+  bottom: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.num {
+  position: fixed;
+  left: 105rpx;
+  bottom: 65rpx;
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18rpx;
+  color: #fff;
+  background-color: #b21e23;
+}
+
+.peisong {
+  position: fixed;
+  bottom: 35rpx;
+  font-size: 30rpx;
+  left: 160rpx;
+  color: #808080;
+}
+
+.allprice {
+  position: fixed;
+  left: 160rpx;
+  bottom: 25rpx;
+  font-size: 40rpx;
+}
+
+.qisong {
+  position: fixed;
+  bottom: 30rpx;
+  font-size: 34rpx;
+  right: 35rpx;
+  color: #808080;
+}

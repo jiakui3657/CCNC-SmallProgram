@@ -1,0 +1,73 @@
+/* pages/we/we.wxss */
+page{
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.container{
+  height: 100%;
+}
+.information{
+  height: 578rpx;
+  width: 670rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  box-shadow: -2rpx 0 10rpx #eee,0 -2rpx 10px #eee,0 2rpx 10rpx #eee,2rpx 0 10rpx #eee;
+  margin: 0 auto;
+  padding: 0rpx 60rpx;
+  box-sizing: border-box;
+  color: #666;
+  overflow: hidden;
+}
+.list{
+  height: 75rpx;
+  border-bottom: 2rpx solid #eee;
+  line-height: 75rpx;
+  margin-top: 50rpx;
+  position: relative;
+}
+.list text{
+  height: 75rpx;
+  line-height: 85rpx;
+  color: #e45b5b;
+  width: 26rpx;
+  float: left;
+}
+.list .name{
+  color: #666;
+  font-size: 30rpx;
+  width: auto;
+  float: left;
+}
+.list input{
+  height: 75rpx; 
+  color: #333;
+  font-size: 34rpx;
+  width: 70%; 
+  line-height: 75rpx;
+  margin-left: 8%;
+  float: left;
+}
+.list button{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  z-index: 111;
+}
+.list button::after{
+  border: 0
+}
+.submit{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #5996e1;
+  width: 670rpx;
+  border-radius: 10rpx;
+  margin: 50rpx auto;
+}

@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/activityDetails/activityDetails",
+    "pages/storeDetails/storeDetails",
+    "pages/vip/vip",
+    "pages/ability/ability",
+    "pages/activation/activation",
+    "pages/personal/personal",
+    "pages/trip/trip",
+    "pages/vouchers/vouchers",
+    "pages/message/message",
+    "pages/ourselves/ourselves",
+    "pages/pay/pay",
+    "pages/topUp/topUp",
+    "pages/balance/balance",
+    "pages/employees/employees",
+    "pages/order/order",
+    "pages/shareList/shareList",
+    "pages/shareDetails/shareDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff"
+  }
+}

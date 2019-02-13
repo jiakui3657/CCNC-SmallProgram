@@ -1,0 +1,19 @@
+<!--pages/order/order.wxml-->
+<view class='container'>
+  <view class='list' wx:for='{{list}}'>
+    <view class='title'>
+      <image src='{{item.venue.type}}'></image>
+      <text>{{item.venue.name}}</text>
+    </view>
+    <view class='money'>
+      <view>
+        <text style='font-size:36rpx;color:#010101;padding-top:25rpx;' class='icon'>￥</text>
+      </view>
+      <view>
+        <text style='font-size:30rpx;color:#757575;'>付款金额</text>
+        <text style='font-size:46rpx;color:#010101;margin-left:10rpx;font-weight:600;'>{{item.money}}</text>
+      </view>
+    </view>
+    <view class='time'>{{item.date}}</view>
+  </view>
+</view>

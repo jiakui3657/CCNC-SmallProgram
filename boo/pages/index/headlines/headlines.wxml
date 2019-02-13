@@ -1,0 +1,9 @@
+<view class="container">
+  <ad unit-id="adunit-fa69246d045d7c32"></ad>
+  <view class='list' bindtap='navigation' wx:for="{{list}}" id='{{item.id}}'>
+    <view class='world'>
+      <text class='title'>{{item.title}}</text>
+    </view>
+    <text class='time'>{{item.date}}</text>
+  </view>
+</view>

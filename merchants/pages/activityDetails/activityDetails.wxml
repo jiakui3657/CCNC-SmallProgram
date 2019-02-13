@@ -1,0 +1,15 @@
+<!--pages/activityDetails/activityDetails.wxml-->
+<view class='container'>
+  <view class='list' wx:for="{{list}}">
+    <view class='company'>
+      <text class='name'>{{item.name}}</text>
+      <text>{{item.companyName}}{{item.job}}</text>
+    </view>
+    <view class='phone'>
+      <text>电话：{{item.phone}}</text>
+      <text class='vip'>vip劵 ￥{{item.money}}</text>
+    </view>
+    <view class='time'>消费时间：{{item.date}}</view>
+  </view>
+</view>
+

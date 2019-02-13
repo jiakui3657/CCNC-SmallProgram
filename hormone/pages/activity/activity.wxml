@@ -1,0 +1,14 @@
+<!--pages/activity/activity.wxml-->
+<view class='list' wx:for="{{list}}" wx:key="unique" data-latstate='{{latstate}}' data-longstate='{{longstate}}' id="{{item.id}}" data-name='{{item.name}}' catchtap='activityDetails'>
+  <image src='{{item.logo}}' mode="widthFix" style='height:100%'></image>
+  <view class='shadow'>
+    <view class='title'>{{item.name}}</view>
+    <view class='introduce'>{{item.summary}}</view>
+    <view class='time'>截止日期：{{item.beginDate}}</view>
+    <view class='money'>
+      <text class='start'>￥{{item.money}}</text>
+      <text class='end'>特权会员：￥{{item.vip}}</text>
+    </view>
+    <view class='type'>{{item.venue}}<span></span>{{item.distance}}<span></span>{{item.catalog}}</view>
+  </view>
+</view>

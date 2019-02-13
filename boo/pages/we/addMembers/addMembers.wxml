@@ -1,0 +1,10 @@
+<!--pages/we/addMembers/addMembers.wxml-->
+<view class="container">
+   <view class="show">
+      <input wx:key="unique" class="input" name="userName" placeholder='请输入姓名...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='writeName'/>
+      <!-- <input wx:key="unique" class="input" name="userName" placeholder='请输入身份证号码...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='writeIdcard'/> -->
+      <input wx:key="unique" class="input" name="userName" placeholder='请输入电话号码...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='writePhone'/>
+      <input wx:key="unique" class="input" name="userName" placeholder='请输入职位名称...' placeholder-style='font-size:26rpx;color:#b4b4b4;' bindinput='writeJobTitle'/>
+     <button class='submit' catchtap='addapply' disabled='{{disabled}}'>确认添加</button>  
+ </view> 
+</view>

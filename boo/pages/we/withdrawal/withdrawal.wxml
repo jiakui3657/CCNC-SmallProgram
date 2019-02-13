@@ -1,0 +1,27 @@
+<!--pages/we/withdrawal/withdrawal.wxml-->
+<view class='container'>
+  <view class='withdrawal'>
+    <text class='balance'>我的余额</text>
+    <view class='amount'>{{money}}</view>
+    <view class='number'>
+      <text>￥</text>
+      <input type='digit' placeholder='请输入提现金额...' placeholder-style='font-size:30rpx;color:#c0c0c0;' bindinput='digital'></input>
+    </view>
+    <view class='poundage'>提现将会收取{{rate}}%的手续费</view>
+  </view>
+  <view class='bankCard'>
+    <view class='title'>选择银行卡</view>
+    <view class='list' wx:key="unique" wx:for="{{arr}}" id='{{item.id}}' bindtap='toggin'>
+      <view class='state'>
+        <image src='{{flag==item.id?"../../images/selected.png":"../../images/uncheck.png"}}' style='width:100%;height:100%'></image>
+      </view>
+      <image src='{{item.icon}}'></image>
+      <view class='bankInformation'>
+        <view class='bank'>{{item.bankName}} 储蓄卡 ({{item.bankNo}})</view>
+        <view class='name'>{{item.name}}</view>
+      </view>
+    </view>
+    <view class='list last' catchtap='jump'>添加银行卡</view>
+  </view>
+  <button catchtap='submit'>完成</button>
+</view>

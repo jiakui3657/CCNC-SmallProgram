@@ -1,0 +1,5 @@
+<!--pages/we/time/time.wxml-->
+<view class='container'>
+  <view class='list'>到期时间：{{time}}</view>
+  <text>{{text}}</text>
+</view>
